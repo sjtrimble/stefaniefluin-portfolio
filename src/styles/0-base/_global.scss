@@ -1,0 +1,22 @@
+body {
+  @include body-font();
+  color: $darkgray;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 1080px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+section,
+.section {
+  display: flex;
+
+  &.highlight-section {
+    background-color: $lightgray;
+  }
+}

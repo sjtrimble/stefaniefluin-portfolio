@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include title-font();
+}
+
+p {
+  line-height: 1.6;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: $darkgray;
+
+  &:hover {
+    color: $teal;
+    transition: color 1s;
+  }
+}
+
+.tagline {
+  font-size: 36px;
+  line-height: 58px;
+}

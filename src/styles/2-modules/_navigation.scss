@@ -1,0 +1,32 @@
+nav.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem 1rem;
+
+  .page-title {
+    @include title-font();
+    font-size: 36px;
+    transition: color 1s;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    list-style: none;
+
+    li:not(last-child) {
+      margin-right: 1rem;
+      text-transform: uppercase;
+      @include title-font();
+      cursor: pointer;
+    }
+  }
+}
