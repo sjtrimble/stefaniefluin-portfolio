@@ -29,4 +29,12 @@ nav.navigation {
       cursor: pointer;
     }
   }
+
+  a {
+    color: $darkgray;
+
+    &:hover {
+      color: $teal;
+    }
+  }
 }

@@ -13,10 +13,10 @@ p {
 
 a, a:visited, a:active {
   text-decoration: none;
-  color: $darkgray;
+  color: $teal;
 
   &:hover {
-    color: $teal;
+    color: $teal-20;
     transition: color 1s;
   }
 }

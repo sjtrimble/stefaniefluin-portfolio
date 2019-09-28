@@ -20,7 +20,7 @@ button {
 
   &:hover {
     transform: translate(0, -8px);
-    background-color: darken($teal, 10%);
+    background-color: $teal-20;
   }
 
   a {
