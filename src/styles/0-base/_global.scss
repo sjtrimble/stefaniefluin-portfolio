@@ -16,6 +16,7 @@ body {
 section,
 .section {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 
   &.highlight-section {
