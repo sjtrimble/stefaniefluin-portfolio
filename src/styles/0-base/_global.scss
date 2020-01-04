@@ -1,6 +1,7 @@
 body {
   @include body-font();
-  color: $darkgray;
+  background: $black;
+  color: $white;
   margin: 0;
   padding: 0;
 }
@@ -24,7 +25,8 @@ section,
   width: 100%;
 
   &.highlight-section {
-    background-color: $lightgray;
+    background-color: $darkgray;
+    color: $white;
   }
 }
 

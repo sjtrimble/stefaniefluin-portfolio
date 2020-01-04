@@ -1,26 +1,28 @@
 button {
-  display: flex;
   height: 40px;
-  border-radius: 50px;
+  border-radius: $border-radius-small;
+  color: $white;
+  background-color: $darkgray;
+  border: 2px solid $white;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1rem;
+  @include title-font();
+  text-transform: uppercase;
   width: auto;
   min-width: 160px;
-  background-color: $teal;
-  color: $white;
-  @include title-font();
-  font-size: 18px;
-  border: none;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .8);
   transition: all 1s;
   cursor: pointer;
 
   &:hover {
     transform: translate(0, -8px);
-    background-color: $teal-20;
+    background-color: $white;
+    color: $black;
   }
 
   a {

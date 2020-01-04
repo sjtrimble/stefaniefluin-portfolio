@@ -4,12 +4,12 @@ nav.navigation {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1rem 1rem;
+  padding: 2rem;
 
   .page-title {
     @include title-font();
     font-size: 36px;
-    transition: color 1s;
+    transition: color 0.5s;
 
     &:hover {
       color: $teal;
@@ -30,7 +30,7 @@ nav.navigation {
     }
 
     li:not(last-child) {
-      margin-right: 1rem;
+      margin-right: 1.5rem;
       text-transform: uppercase;
       @include title-font();
       cursor: pointer;
@@ -38,10 +38,11 @@ nav.navigation {
   }
 
   a {
-    color: $darkgray;
+    color: $white;
+    font-weight: 600;
 
     &:hover {
-      color: $teal;
+      color: $ashgray;
     }
   }
 }

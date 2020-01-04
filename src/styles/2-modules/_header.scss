@@ -14,11 +14,10 @@ header.section.container {
   }
 
   img {
+    @include circle;
     height: 340px;
     width: auto;
-    margin-top: 2rem;
-    transform: scaleY(-1);
-    border-radius: $border-radius-large;
+    margin-top: 0;
 
     @media screen and (max-width: 768px) {
       width: 100%;
