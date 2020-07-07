@@ -1,3 +1,9 @@
+.grid {
+  * {
+    animation: fade-in 1.5s;
+  }
+}
+
 .about-blurb {
   p:first-child {
     margin-right: 2rem;
