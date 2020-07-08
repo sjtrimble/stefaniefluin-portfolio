@@ -7,7 +7,8 @@ export const projectList = [
     designSystemsTag: true,
     uxDesignTag: true,
     uiDevelopmentTag: true,
-    creativeStrategyTag: true
+    creativeStrategyTag: true,
+    caseStudyAvailable: false
   },
   {
     title: 'SurePayroll Onboarding Experience',
@@ -18,5 +19,6 @@ export const projectList = [
     uxDesignTag: true,
     uiDevelopmentTag: true,
     designSystemsTag: true,
+    caseStudyAvailable: false
   },
 ];
