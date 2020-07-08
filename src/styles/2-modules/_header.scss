@@ -6,6 +6,7 @@ header.section.container {
 
   @media screen and (max-width: 768px) {
     padding-top: 0;
+    flex-direction: column;
   }
 
   .header-text {
@@ -21,8 +22,9 @@ header.section.container {
     animation: fade-in 3s;
 
     @media screen and (max-width: 768px) {
-      width: 100%;
+      width: 70%;
       height: auto;
+      margin: 1rem;
     }
   }
 }

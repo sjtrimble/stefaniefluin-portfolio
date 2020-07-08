@@ -16,9 +16,21 @@
     flex-direction: row;
     justify-content: space-between;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .project-summary-details {
+      margin: 0 1rem 1rem 0;
+    }
+
     .project-summary-image {
       width: 400px;
       border-radius: $border-radius-small;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }
