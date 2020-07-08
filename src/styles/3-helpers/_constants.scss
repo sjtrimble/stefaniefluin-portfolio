@@ -7,6 +7,44 @@ $teal-10: darken($teal, 10%);
 $white: #FFFFFF;
 $black: #262629;
 
+// Secondary Colors
+$lilac: #8884FF;
+$mantis: #78BC61;
+$blush: #F7717D;
+
 // Sizing Units
 $border-radius-large: 16px;
 $border-radius-small: 3px;
+
+// Color Utilities
+.text-lilac {
+  color: $lilac;
+}
+
+.text-teal {
+  color: $teal;
+}
+
+.text-mantis {
+  color: $mantis;
+}
+
+.text-blush {
+  color: $blush;
+}
+
+.bkgd-lilac {
+  background-color: $lilac;
+}
+
+.bkgd-teal {
+  background-color: $teal;
+}
+
+.bkgd-mantis {
+  background-color: $mantis;
+}
+
+.bkgd-blush {
+  background-color: $blush;
+}
