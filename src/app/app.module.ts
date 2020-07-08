@@ -9,6 +9,7 @@ import { WorkComponent } from './work/work.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExplorationsComponent } from './explorations/explorations.component';
+import { ProjectHighlightComponent } from './project-highlight/project-highlight.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExplorationsComponent } from './explorations/explorations.component';
     WorkComponent,
     NavbarComponent,
     FooterComponent,
-    ExplorationsComponent
+    ExplorationsComponent,
+    ProjectHighlightComponent
   ],
   imports: [
     BrowserModule,

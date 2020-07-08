@@ -17,7 +17,7 @@
     <img src="/assets/images/sf-2019.jpg" alt="Stefanie Fluin smiling with desktop computer and laptop in the background"/>
   </header>
 
-  <section class="about-blurb highlight-section">
+  <section class="about-blurb section-highlight">
     <div class="container">
       <p>
         Available for remote or Bay Area based projects.
@@ -26,6 +26,8 @@
   </section>
 
   <section class="container">
-    <!-- <h2>Works</h2> -->
+    <h2>Project Highlights</h2>
+    <app-project-highlight *ngFor="let project of projectList" [project]="project">
+    </app-project-highlight>
   </section>
 </main>
