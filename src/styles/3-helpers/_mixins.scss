@@ -3,13 +3,15 @@
 
 @mixin body-font {
   // font-family: "Roboto", sans-serif;
-  font-family: "Inter", Arial, sans-serif;
+  // font-family: "Inter", Arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
   letter-spacing: 0.2px;
 }
 
 @mixin title-font {
   // font-family: "Work Sans", Arial, sans-serif;
-  font-family: "Inter", Arial, sans-serif;
+  // font-family: "Inter", Arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 @mixin circle {
