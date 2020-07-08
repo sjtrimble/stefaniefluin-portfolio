@@ -1,0 +1,19 @@
+.label-container {
+  display: flex;
+  flex-direction: row;
+
+  .label {
+    border-radius: 40px;
+    min-width: 110px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+}
