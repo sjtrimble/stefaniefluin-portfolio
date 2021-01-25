@@ -1,5 +1,6 @@
 export const projectList = [
   {
+    name: 'angular-docs',
     title: 'Angular Documentation Website',
     description: 'Designing an easy-to-use developer-focused website.',
     image: 'angular-docs.png',
@@ -11,6 +12,7 @@ export const projectList = [
     caseStudyAvailable: false
   },
   {
+    name: 'surepayroll-onboarding',
     title: 'SurePayroll Onboarding Experience',
     description: 'Increasing enrollment conversion.',
     image: 'surepayroll-onboarding.png',
