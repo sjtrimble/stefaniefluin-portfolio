@@ -12,7 +12,7 @@ nav.navigation {
     transition: color 0.5s;
 
     &:hover {
-      color: $teal;
+      color: $lilac-medium;
     }
   }
 
@@ -35,14 +35,22 @@ nav.navigation {
       @include title-font();
       cursor: pointer;
     }
+
+    &.social-link-group a {
+      background: rgba($ashgray, 0.1);
+
+      &:hover {
+        background: rgba($ashgray, 0.05);
+      }
+    }
   }
 
   a {
-    color: $white;
+    color: $darkgray;
     font-weight: 600;
 
     &:hover {
-      color: $ashgray;
+      color: $lilac-medium;
     }
   }
 }

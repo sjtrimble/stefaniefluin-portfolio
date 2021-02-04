@@ -1,16 +1,19 @@
 // Base Colors
-$darkgray: #484850;
+// $darkgray: #484850;
+// $darkgray: #364B4E;
+$darkgray: #545963;
 $ashgray: #AAAAB4;
 $lightgray:#F3F3F3;
-$teal: #14E1DA;
-$teal-10: darken($teal, 10%);
+$lilac: #8884FF;
+$lilac-medium: #9a97ec;
 $white: #FFFFFF;
 $black: #262629;
 
 // Secondary Colors
-$lilac: #8884FF;
 $mantis: #78BC61;
 $blush: #F7717D;
+$teal: #14E1DA;
+$teal-10: darken($teal, 10%);
 
 // Sizing Units
 $border-radius-large: 16px;

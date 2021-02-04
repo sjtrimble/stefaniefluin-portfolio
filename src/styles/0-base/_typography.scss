@@ -23,10 +23,10 @@ p {
 
 a, a:visited, a:active {
   text-decoration: none;
-  color: $teal;
+  color: darken($lilac, 5%);
 
   &:hover {
-    color: $teal-10;
+    color: darken($lilac, 10%);
     transition: color 1s;
   }
 }
@@ -34,4 +34,5 @@ a, a:visited, a:active {
 .tagline {
   font-size: 36px;
   line-height: 58px;
+  font-weight: normal;
 }
