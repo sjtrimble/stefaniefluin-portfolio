@@ -1,8 +1,8 @@
 button {
   height: 40px;
   border-radius: $border-radius-small;
-  color: darken($lilac, 5%);
-  background-color: rgba($lilac, 0.5);
+  background-color: rgba($lilac, 0.2);
+  color: $lilac-medium;
   box-shadow: none;
   border: none;
   letter-spacing: 1px;
@@ -21,8 +21,8 @@ button {
 
   &:hover {
     transform: translate(0, -8px);
-    background-color: $white;
-    color: $black;
+    color: darken($lilac, 5%);
+    background-color: rgba($lilac, 0.5);
   }
 
   a {
