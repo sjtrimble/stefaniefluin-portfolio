@@ -1,7 +1,7 @@
 body {
   @include body-font();
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $darkgray;
   margin: 0;
   padding: 0;
 }

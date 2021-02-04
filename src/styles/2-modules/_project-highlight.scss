@@ -1,5 +1,5 @@
 .project-highlight {
-  background-color: rgba($white, 0.1);
+  background-color: rgba($darkgray, 0.1);
   padding: 2rem;
   border-radius: $border-radius-large;
   transition: all 1s;
@@ -7,7 +7,7 @@
   margin-bottom: 1rem;
 
   &:hover {
-    background-color: rgba($white, 0.05);
+    background-color: rgba($darkgray, 0.05);
     transform: translate(0, -4px);
   }
 
