@@ -12,7 +12,7 @@ nav.navigation {
     transition: color 0.5s;
 
     &:hover {
-      color: darken($lilac, 5%);
+      color: $lilac-medium;
     }
   }
 
@@ -50,7 +50,7 @@ nav.navigation {
     font-weight: 600;
 
     &:hover {
-      color: $ashgray;
+      color: $lilac-medium;
     }
   }
 }
