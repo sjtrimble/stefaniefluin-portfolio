@@ -12,7 +12,7 @@ nav.navigation {
     transition: color 0.5s;
 
     &:hover {
-      color: $teal;
+      color: darken($lilac, 5%);
     }
   }
 
