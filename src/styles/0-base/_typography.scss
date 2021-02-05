@@ -7,6 +7,11 @@ h6 {
   @include title-font();
 }
 
+h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
 h2 {
   font-size: 36px;
   margin-bottom: 2rem;
@@ -23,11 +28,18 @@ p {
 
 a, a:visited, a:active {
   text-decoration: none;
-  color: darken($lilac, 5%);
+  color: $lilac-dark;
 
   &:hover {
-    color: darken($lilac, 10%);
-    transition: color 1s;
+    color: $lilac-dark;
+    transition: color 0.5s;
+    text-decoration: none;
+  }
+}
+
+span, p {
+  a:hover {
+    text-decoration: underline;
   }
 }
 
@@ -35,4 +47,22 @@ a, a:visited, a:active {
   font-size: 36px;
   line-height: 58px;
   font-weight: normal;
+}
+
+.subtitle {
+  color: rgba($darkgray, 0.8);
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: -1.5rem;
+}
+
+.text-subheading {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba($darkgray, 0.8);
+}
+
+::selection {
+  background-color: rgba($lilac, 0.2);
+  color: $lilac-dark;
 }

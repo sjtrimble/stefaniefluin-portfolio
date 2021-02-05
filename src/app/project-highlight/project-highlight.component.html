@@ -1,4 +1,4 @@
-<div [routerLink]="['/work', project.name]" class="project-highlight">
+<div [routerLink]="['/work/' + project.name]" class="project-highlight">
   <div class="label-container">
     <span *ngIf="project.uxDesignTag" class="label bkgd-lilac">UX Design</span>
     <span *ngIf="project.uiDevelopmentTag" class="label bkgd-teal">UI Development</span>

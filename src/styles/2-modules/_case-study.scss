@@ -1,0 +1,44 @@
+.case-study {
+  background: rgba($mantis, 0.1);
+
+  // Custom SurePayroll
+  &.case-study-surepayroll {
+    background: rgba($mantis, 0.2);
+
+    header h1 {
+      color: $mantis;
+    }
+  }
+
+  // Custom Angular
+  &.case-study-angular {
+    background: rgba($blue, 0.2);
+
+    header h1 {
+      color: $blue;
+    }
+  }
+
+
+  header.case-study-header {
+    text-align: center;
+  }
+
+  .case-study-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+
+    > * {
+      > *:nth-child(2) {
+      margin: 0.5rem 0 0;
+      font-weight: bold;
+    }
+  }
+
+    .case-study-client {
+      margin-right: 1rem;
+    }
+  }
+}
