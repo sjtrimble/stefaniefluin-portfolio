@@ -52,6 +52,11 @@ $border-radius-small: 3px;
   background-color: $blush;
 }
 
+// Typography Utilities
 .text-italic {
   font-style: italic;
+}
+
+.text-center {
+  text-align: center;
 }

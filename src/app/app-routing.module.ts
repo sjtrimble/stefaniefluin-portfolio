@@ -19,9 +19,13 @@ const routes: Routes = [
   {
     path: 'work',
     component: WorkComponent,
-    children: [
-      { path: ':name', component: ProjectHighlightComponent}
-    ]
+    // children: [
+    //   { path: ':name', component: WorkComponent}
+    // ]
+  },
+  {
+    path: 'work/:name',
+    component: WorkComponent
   },
   {
     path: 'explorations',

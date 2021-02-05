@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { projectList } from '../project-highlight/projects';
+import { projectList } from '../shared/projects';
 
 @Component({
   selector: 'app-home',
