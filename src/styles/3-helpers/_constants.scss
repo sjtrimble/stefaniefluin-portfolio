@@ -6,6 +6,7 @@ $ashgray: #AAAAB4;
 $lightgray:#F3F3F3;
 $lilac: #8884FF;
 $lilac-medium: #9a97ec;
+$lilac-dark: #6560FF;
 $white: #FFFFFF;
 $black: #262629;
 
@@ -14,6 +15,10 @@ $mantis: #78BC61;
 $blush: #F7717D;
 $teal: #14E1DA;
 $teal-10: darken($teal, 10%);
+// $teal-alternative: #2AB7CA;
+$blue: #3DA5D9;
+$orange: #EA7317;
+$yellow: #FEC601;
 
 // Sizing Units
 $border-radius-large: 16px;
@@ -52,6 +57,11 @@ $border-radius-small: 3px;
   background-color: $blush;
 }
 
+// Typography Utilities
 .text-italic {
   font-style: italic;
+}
+
+.text-center {
+  text-align: center;
 }

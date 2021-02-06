@@ -1,10 +1,15 @@
 <main class="content">
   <section class="section">
     <div class="container">
-      <h1>Coming Soon!</h1>
+      <h1 class="text-center">Coming Soon</h1>
       <p>Case studies coming soon.</p>
       <p>My favorite project I recently worked on was the redesign of the <a href="https://www.angular.io" target="_blank">Angular</a> CLI template project.</p>
       <p>Check out some of my work <a href="https://www.behance.net/stefaniefluin" target=”_blank”>here</a>.</p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <app-project-highlight *ngFor="let project of projectList" [project]="project"></app-project-highlight>
     </div>
   </section>
 </main>

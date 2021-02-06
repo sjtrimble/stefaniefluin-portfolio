@@ -6,31 +6,38 @@ import { WorkComponent } from './work/work.component';
 import { HomeComponent } from './home/home.component';
 import { ExplorationsComponent } from './explorations/explorations.component';
 import { ProjectHighlightComponent } from './project-highlight/project-highlight.component';
+import { SurepayrollOnboardingComponent } from './case-studies/surepayroll-onboarding/surepayroll-onboarding.component';
+import { AngularWebsiteComponent } from './case-studies/angular-website/angular-website.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
   },
   {
     path: 'work',
     component: WorkComponent,
-    children: [
-      { path: ':name', component: ProjectHighlightComponent}
-    ]
+  },
+  {
+    path: 'work/angular-docs',
+    component: AngularWebsiteComponent,
+  },
+  {
+    path: 'work/surepayroll-onboarding',
+    component: SurepayrollOnboardingComponent,
   },
   {
     path: 'explorations',
-    component: ExplorationsComponent
+    component: ExplorationsComponent,
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' , scrollPositionRestoration: 'enabled'})],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

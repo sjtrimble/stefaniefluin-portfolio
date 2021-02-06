@@ -5,6 +5,7 @@ nav.navigation {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  background: transparent;
 
   .page-title {
     @include title-font();
@@ -51,6 +52,7 @@ nav.navigation {
 
     &:hover {
       color: $lilac-medium;
+      text-decoration: none;
     }
   }
 }

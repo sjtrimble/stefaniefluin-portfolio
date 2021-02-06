@@ -21,7 +21,7 @@ button {
 
   &:hover {
     transform: translate(0, -8px);
-    color: darken($lilac, 5%);
+    color: $lilac-dark;
     background-color: rgba($lilac, 0.5);
   }
 
