@@ -1,26 +1,7 @@
 .case-study {
-  background: rgba($mantis, 0.1);
 
-  // Custom SurePayroll
-  &.case-study-surepayroll {
-    background: rgba($mantis, 0.2);
-
-    header h1 {
-      color: $mantis;
-    }
-  }
-
-  // Custom Angular
-  &.case-study-angular {
-    background: rgba($blue, 0.2);
-
-    header h1 {
-      color: $blue;
-    }
-  }
-
-
-  header.case-study-header {
+  .case-study-header {
+    background: $lightgray;
     text-align: center;
   }
 
@@ -32,13 +13,47 @@
 
     > * {
       > *:nth-child(2) {
-      margin: 0.5rem 0 0;
-      font-weight: bold;
+        margin: 0.5rem 0 0;
+        font-weight: bold;
+      }
     }
-  }
 
     .case-study-client {
       margin-right: 1rem;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .case-study-concept {
+    margin-bottom: 1rem;
+  }
+
+  // Custom SurePayroll
+  &.case-study-surepayroll {
+    .case-study-header {
+      background: rgba($mantis, 0.2);
+
+      header h1 {
+        color: $mantis;
+      }
+    }
+  }
+
+  // Custom Angular
+  &.case-study-angular {
+    .case-study-header {
+      background: rgba($blue, 0.2);
+
+      header h1 {
+        color: $blue;
+      }
     }
   }
 }

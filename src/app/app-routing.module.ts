@@ -21,21 +21,15 @@ const routes: Routes = [
   {
     path: 'work',
     component: WorkComponent,
-    children: [
-      {
-        path: 'angular-docs',
-        component: AngularWebsiteComponent,
-      },
-      {
-        path: 'surepayroll-onboarding',
-        component: SurepayrollOnboardingComponent,
-      },
-    ],
   },
-  // {
-  //   path: 'work/:name',
-  //   component: WorkComponent
-  // },
+  {
+    path: 'work/angular-docs',
+    component: AngularWebsiteComponent,
+  },
+  {
+    path: 'work/surepayroll-onboarding',
+    component: SurepayrollOnboardingComponent,
+  },
   {
     path: 'explorations',
     component: ExplorationsComponent,
@@ -43,7 +37,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' , scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

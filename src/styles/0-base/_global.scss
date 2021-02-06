@@ -4,9 +4,13 @@ body {
   color: $darkgray;
   margin: 0;
   padding: 0;
-
   cursor: url('../../assets/icons/cursor-pointer.svg'), default;
 }
+
+// .page-home {
+//   background: white url('../../assets/images/bg-wave.svg') no-repeat top;
+//   background-position: -30px 0;
+// }
 
 .container {
   display: flex;
@@ -20,6 +24,10 @@ body {
   }
 }
 
+main.content {
+  min-height: calc(100vh - 242px);
+}
+
 section,
 .section {
   display: flex;
@@ -27,8 +35,9 @@ section,
   width: 100%;
 
   &.section-highlight {
-    background-color: $darkgray;
-    color: $white;
+    background-color: $lightgray;
+    margin: auto;
+    text-align: center;
   }
 }
 
