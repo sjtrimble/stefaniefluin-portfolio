@@ -1,5 +1,9 @@
 .case-study {
 
+  .container {
+    max-width: 50em;
+  }
+
   .case-study-header {
     background: $lightgray;
     text-align: center;
