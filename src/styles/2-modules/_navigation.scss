@@ -30,11 +30,15 @@ nav.navigation {
       margin-top: 1rem;
     }
 
-    li:not(last-child) {
-      margin-right: 1.5rem;
-      text-transform: uppercase;
-      @include title-font();
-      cursor: pointer;
+    li {
+      height: 24px;
+
+      &:not(last-child) {
+        margin-right: 1.5rem;
+        text-transform: uppercase;
+        @include title-font();
+        cursor: pointer;
+      }
     }
 
     &.social-link-group a {
