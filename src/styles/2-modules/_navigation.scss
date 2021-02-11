@@ -27,6 +27,10 @@ nav.navigation {
       }
   }
 
+  .nav-links {
+    display: flex;
+  }
+
 
   ul {
     display: flex;
@@ -43,6 +47,11 @@ nav.navigation {
 
     li {
       height: 24px;
+
+      &.social-link {
+        display: flex;
+        align-items: center;
+      }
 
       &:not(last-child) {
         margin-right: 1.5rem;

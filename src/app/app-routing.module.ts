@@ -31,10 +31,11 @@ const routes: Routes = [
     path: 'work/surepayroll-onboarding',
     component: SurepayrollOnboardingComponent,
   },
+  // {
+  //   path: 'explorations',
+  //   component: ExplorationsComponent,
+  // },
   {
-    path: 'explorations',
-    component: ExplorationsComponent,
-  },  {
     path: 'newsletter',
     component: NewsletterComponent,
   },
