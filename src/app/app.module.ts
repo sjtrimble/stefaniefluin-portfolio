@@ -12,6 +12,7 @@ import { ExplorationsComponent } from './explorations/explorations.component';
 import { ProjectHighlightComponent } from './project-highlight/project-highlight.component';
 import { AngularWebsiteComponent } from './case-studies/angular-website/angular-website.component';
 import { SurepayrollOnboardingComponent } from './case-studies/surepayroll-onboarding/surepayroll-onboarding.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SurepayrollOnboardingComponent } from './case-studies/surepayroll-onboa
     ExplorationsComponent,
     ProjectHighlightComponent,
     AngularWebsiteComponent,
-    SurepayrollOnboardingComponent
+    SurepayrollOnboardingComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,

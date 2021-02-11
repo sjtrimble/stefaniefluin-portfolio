@@ -8,6 +8,7 @@ import { ExplorationsComponent } from './explorations/explorations.component';
 import { ProjectHighlightComponent } from './project-highlight/project-highlight.component';
 import { SurepayrollOnboardingComponent } from './case-studies/surepayroll-onboarding/surepayroll-onboarding.component';
 import { AngularWebsiteComponent } from './case-studies/angular-website/angular-website.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,9 @@ const routes: Routes = [
   {
     path: 'explorations',
     component: ExplorationsComponent,
+  },  {
+    path: 'newsletter',
+    component: NewsletterComponent,
   },
 ];
 
