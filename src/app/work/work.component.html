@@ -1,15 +1,27 @@
 <main class="content">
   <section class="section">
     <div class="container">
-      <h1 class="text-center">Coming Soon</h1>
-      <p>Case studies coming soon.</p>
-      <p>My favorite project I recently worked on was the redesign of the <a href="https://www.angular.io" target="_blank">Angular</a> CLI template project.</p>
-      <p>Check out some of my work <a href="https://www.behance.net/stefaniefluin" target=”_blank”>here</a>.</p>
+      <h1 class="text-center">Work</h1>
+      <p>My experience focuses on web apps, design systems and user experience. However, I have also worked on branding and logos, business process and video editing.</p>
+      <h2>Case Studies</h2>
+      <app-project-highlight
+        *ngFor="let project of projectList"
+        [project]="project"
+      ></app-project-highlight>
     </div>
   </section>
-  <section>
+
+  <hr>
+
+  <section class="section">
     <div class="container">
-      <app-project-highlight *ngFor="let project of projectList" [project]="project"></app-project-highlight>
+      <h2>Writing</h2>
+      <h3>2020</h3>
+      <ul>
+        <li><a href="https://medium.com/swlh/how-to-structure-scss-in-an-angular-app-a1b8a759a028" target="_blank">How to Structure SCSS in an Angular App</a></li>
+        <li><a href="https://medium.com/@stefaniefluin/quick-guide-to-angular-schematics-how-i-built-my-first-schematic-2c81a486dd3a" target="_blank">Quick Guide to Angular Schematics: How I Built My First Schematic</a></li>
+        <li><a href="https://medium.com/@stefaniefluin/the-new-sass-module-system-out-with-import-in-with-use-e1bd8ba032d0" target="_blank">The New SASS Module System: Out with @import, In with @use</a></li>
+      </ul>
     </div>
   </section>
 </main>
