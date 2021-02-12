@@ -7,15 +7,39 @@ nav.navigation {
   padding: 2rem;
   background: transparent;
 
-  .page-title {
-    @include title-font();
-    font-size: 36px;
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     transition: color 0.5s;
 
-    &:hover {
-      color: $lilac-medium;
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
+
+    img {
+      margin-right: 0.5rem;
+    }
+
+      .page-title {
+        @include title-font();
+        font-size: 24px;
+
+        &:hover {
+          color: $lilac-medium;
+        }
+      }
+  }
+
+  .nav-links {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin: auto;
     }
   }
+
 
   ul {
     display: flex;
@@ -30,11 +54,20 @@ nav.navigation {
       margin-top: 1rem;
     }
 
-    li:not(last-child) {
-      margin-right: 1.5rem;
-      text-transform: uppercase;
-      @include title-font();
-      cursor: pointer;
+    li {
+      height: 24px;
+
+      &.social-link {
+        display: flex;
+        align-items: center;
+      }
+
+      &:not(last-child) {
+        margin-right: 1.5rem;
+        text-transform: uppercase;
+        @include title-font();
+        cursor: pointer;
+      }
     }
 
     &.social-link-group a {
