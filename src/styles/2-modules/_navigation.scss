@@ -13,6 +13,10 @@ nav.navigation {
     align-items: center;
     transition: color 0.5s;
 
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
+
     img {
       margin-right: 0.5rem;
     }
@@ -29,6 +33,11 @@ nav.navigation {
 
   .nav-links {
     display: flex;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin: auto;
+    }
   }
 
 
