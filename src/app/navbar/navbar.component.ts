@@ -17,10 +17,11 @@ export class NavbarComponent implements OnInit {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-    if (scrollLocation > 100) {
+      console.log(scrollLocation);
+    if (scrollLocation > 50) {
       this.styleHeader = true;
     }
-    if (scrollLocation < 100) {
+    if (scrollLocation < 50) {
       this.styleHeader = false;
     }
   }
