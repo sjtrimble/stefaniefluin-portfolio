@@ -2,7 +2,7 @@ button {
   height: 40px;
   border-radius: $border-radius-small;
   background-color: rgba($lilac, 0.2);
-  color: $lilac-medium;
+  color: $lilac-dark2;
   box-shadow: none;
   border: none;
   letter-spacing: 1px;
@@ -21,7 +21,6 @@ button {
 
   &:hover {
     transform: translate(0, -8px);
-    color: $lilac-dark;
     background-color: rgba($lilac, 0.5);
   }
 
