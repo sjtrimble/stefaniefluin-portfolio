@@ -1,20 +1,32 @@
 <div [routerLink]="['/work/' + project.name]" class="project-highlight">
   <div class="label-container">
     <span *ngIf="project.uxDesignTag" class="label bkgd-lilac">UX Design</span>
-    <span *ngIf="project.uiDevelopmentTag" class="label bkgd-teal">UI Development</span>
-    <span *ngIf="project.designSystemsTag" class="label bkgd-blush">Design Systems</span>
-    <span *ngIf="project.creativeStrategyTag" class="label bkgd-mantis">Creative Strategy</span>
+    <span *ngIf="project.uiDevelopmentTag" class="label bkgd-teal"
+      >UI Development</span
+    >
+    <span *ngIf="project.designSystemsTag" class="label bkgd-blush"
+      >Design Systems</span
+    >
+    <span *ngIf="project.creativeStrategyTag" class="label bkgd-mantis"
+      >Creative Strategy</span
+    >
   </div>
 
   <div class="project-summary">
     <div class="project-summary-details">
-      <h3>{{project.title}}</h3>
-      <p>{{project.description}}</p>
-      <a *ngIf="project.caseStudyAvailable" href="{{project.caseStudyLink}}">Explore Case Study</a>
+      <h3>{{ project.title }}</h3>
+      <p>{{ project.description }}</p>
+      <a *ngIf="project.caseStudyAvailable" href="{{ project.caseStudyLink }}"
+        >Explore Case Study</a
+      >
       <!-- <span *ngIf="!project.caseStudyAvailable" class="text-italic">Case Study Coming Soon</span> -->
-  </div>
-  <a target="_blank">
-    <img class="project-summary-image" src="assets/images/work/{{project.image}}">
-  </a>
+    </div>
+    <a target="_blank">
+      <img
+        class="project-summary-image"
+        alt="{{ project.imageAltText }}"
+        src="assets/images/work/{{ project.image }}"
+      />
+    </a>
   </div>
 </div>
