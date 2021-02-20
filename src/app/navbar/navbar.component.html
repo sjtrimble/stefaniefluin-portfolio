@@ -1,12 +1,33 @@
-<nav class="navigation" [ngClass]="{'nav-scroll': styleHeader}">
-  <a class="logo" routerLink="/">
-    <img
-    src="../../assets/icons/icon-logo.svg"
-    alt="Stefanie Fluin logo icon" />
-    <span class="page-title">Stefanie Fluin</span>
-  </a>
+<nav
+  class="navigation"
+  [ngClass]="{
+    'nav-scroll': styleHeader,
+    'mobile-nav': isMobile && sideNavOpen
+  }"
+>
+  <div>
+    <a class="logo" routerLink="/">
+      <img
+        src="../../assets/icons/icon-logo.svg"
+        alt="Stefanie Fluin logo icon"
+      />
+      <span class="page-title">Stefanie Fluin</span>
+    </a>
+    <button *ngIf="isMobile && sideNavOpen" (click)="toggleNav()">
+      <img
+        src="../../assets/icons/icon-close.svg"
+        alt="Close sidenav menu"
+        height="24px"
+        width="24px"
+      />
+    </button>
+  </div>
 
-  <div class="nav-links">
+  <div
+    class="nav-links"
+    *ngIf="(sideNavOpen && isMobile) || !isMobile"
+    (click)="toggleNav()"
+  >
     <ul>
       <li><a routerLink="/about">About</a></li>
       <li><a routerLink="/work">Work</a></li>
@@ -18,12 +39,17 @@
             alt="Email icon"
             height="24px"
             width="24px"
+            class="mobile-hide"
         /></a>
+        <a href="mailto:sjtrimble@gmail.com?Subject=Hello" target="_blank"
+          *ngIf="sideNavOpen"
+          >Email</a
+        >
       </li>
     </ul>
 
     <!-- Social Links -->
-    <ul class="social-link-group">
+    <ul class="social-link-group mobile-hide" *ngIf="!hideSocialLinks">
       <li class="social-link">
         <a href="https://www.behance.net/stefaniefluin" target="_blank"
           ><img
@@ -62,4 +88,12 @@
       </li>
     </ul>
   </div>
+  <button *ngIf="isMobile && !sideNavOpen" (click)="toggleNav()">
+    <img
+      src="../../assets/icons/icon-menu.svg"
+      alt="Open sidenav menu"
+      height="24px"
+      width="24px"
+    />
+  </button>
 </nav>
