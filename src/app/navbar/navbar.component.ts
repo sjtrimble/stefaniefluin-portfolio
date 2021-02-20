@@ -14,8 +14,9 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   toggleNav() {
-    this.sideNavOpen = !this.sideNavOpen;
-    console.log('toggleNav running | sideNavOpen', this.sideNavOpen);
+    if (this.isMobile) {
+      this.sideNavOpen = !this.sideNavOpen;
+    }
   }
 
   ngOnInit() {
