@@ -5,6 +5,7 @@ $darkgray: #545963;
 $ashgray: #AAAAB4;
 $lightgray:#F3F3F3;
 $lilac: #8884FF;
+$lilac-light: #dfdef6;
 $lilac-medium: #9a97ec;
 $lilac-dark: #6560FF;
 $lilac-dark2: #4944dd;
@@ -65,4 +66,22 @@ $border-radius-small: 3px;
 
 .text-center {
   text-align: center;
+}
+
+.mobile-hide {
+  @media screen and (max-width: 768px) {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+.desktop-hide {
+  @media screen and (min-width: 769px) {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
 }

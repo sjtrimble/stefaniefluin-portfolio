@@ -7,6 +7,12 @@
   padding: 0;
   margin: 0 0.5rem 1rem;
 
+  &.mobile-hide {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
   .social-link {
     &:not(:last-child) {
       margin-right: 0.5rem;
