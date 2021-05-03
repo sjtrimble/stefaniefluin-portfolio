@@ -88,6 +88,13 @@
       </li>
     </ul>
   </div>
+  <div *ngIf="!sideNavOpen" class="toggle-group">
+    <label class="switch">
+      <input (click)="toggleTheme()"   [checked]="isDarkTheme" type="checkbox">
+      <span class="slider"></span>
+    </label>
+    <div>Dark Mode</div>
+  </div>
   <button *ngIf="isMobile && !sideNavOpen" (click)="toggleNav()">
     <img
       src="../../assets/icons/icon-menu.svg"

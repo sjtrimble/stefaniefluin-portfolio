@@ -1,0 +1,21 @@
+body.dark-theme {
+  background: $black;
+  color: $white;
+
+  nav.navigation {
+    background-color: $black;
+  }
+
+  .nav-links a,
+  .page-title {
+    color: $white;
+  }
+
+  .project-highlight {
+    background-color: rgba($darkgray, 0.7);
+
+    &:hover {
+      background-color: rgba($darkgray, 0.4);
+    }
+  }
+}
