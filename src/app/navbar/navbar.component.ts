@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
   screenWidth: number;
   isMobile: boolean;
   hideSocialLinks = false;
+  isDarkTheme = false;
 
   constructor() {}
 
@@ -17,6 +18,11 @@ export class NavbarComponent implements OnInit {
     if (this.isMobile) {
       this.sideNavOpen = !this.sideNavOpen;
     }
+  }
+
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+    document.body.classList.toggle('dark-theme');
   }
 
   ngOnInit() {
@@ -29,7 +35,15 @@ export class NavbarComponent implements OnInit {
     console.log('the width on init is:', this.screenWidth);
     console.log('isMobile onInit', this.isMobile);
     console.log('sideNavOpen onInit', this.sideNavOpen);
+
+    // Toggle Check for Dark Theme
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.body.classList.add('dark-theme');
+      this.isDarkTheme = true;
+    }
   }
+
+
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
