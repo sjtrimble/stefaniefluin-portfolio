@@ -90,6 +90,10 @@
   </div>
   <div *ngIf="!sideNavOpen" class="toggle-group">
     <label class="switch">
+      <div class="icons">
+        <span>🌞</span>
+        <span>🌙</span>
+      </div>
       <input (click)="toggleTheme()"   [checked]="isDarkTheme" type="checkbox">
       <span class="slider"></span>
     </label>
