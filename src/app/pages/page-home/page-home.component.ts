@@ -4,6 +4,7 @@ import { EngineeringSectionComponent } from '../../components/engineering-sectio
 import { FeaturedWorkComponent } from '../../components/featured-work/featured-work.component';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 import { AboutPageComponent } from '../about-page/about-page.component';
+import { SectionReferencesComponent } from '../../components/section-references/section-references.component';
 import { SystemsSectionComponent } from '../../components/systems-section/systems-section.component';
 
 @Component({
@@ -15,6 +16,7 @@ import { SystemsSectionComponent } from '../../components/systems-section/system
     SystemsSectionComponent,
     EngineeringSectionComponent,
     AboutPageComponent,
+    SectionReferencesComponent,
     CtaSectionComponent
   ],
   templateUrl: './page-home.component.html'
