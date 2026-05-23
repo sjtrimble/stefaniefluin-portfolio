@@ -290,6 +290,10 @@ $spaces: (
   gap: var(--space-gutter);
 }
 
+.col-4 {
+  grid-column: span 4;
+}
+
 .col-5 {
   grid-column: span 5;
 }
@@ -304,6 +308,10 @@ $spaces: (
 
 .col-10 {
   grid-column: 2 / span 10;
+}
+
+.col-12 {
+  grid-column: span 12;
 }
 
 .offset-7 {

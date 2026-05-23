@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class TopNavbarComponent {
   protected readonly navLinks = [
     { route: '/case-study/design-system-migration-01', label: 'Case Studies', active: true },
-    { href: '#systems', label: 'Systems', active: false },
+    { route: '/writing', label: 'Writing', active: false },
     { route: '/about', label: 'About', active: false },
     { href: '#contact', label: 'Contact', active: false }
   ];
