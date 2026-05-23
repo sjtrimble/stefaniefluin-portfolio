@@ -2,7 +2,7 @@
   background: var(--background);
 }
 
-.site-header {
+.top-navbar {
   position: sticky;
   top: 0;
   z-index: 20;
@@ -365,7 +365,7 @@
 }
 
 @media (max-width: 768px) {
-  .site-header {
+  .top-navbar {
     backdrop-filter: none;
   }
 

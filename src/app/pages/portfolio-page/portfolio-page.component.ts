@@ -5,14 +5,14 @@ import { EngineeringSectionComponent } from '../../components/engineering-sectio
 import { FeaturedWorkComponent } from '../../components/featured-work/featured-work.component';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 import { SiteFooterComponent } from '../../components/site-footer/site-footer.component';
-import { SiteHeaderComponent } from '../../components/site-header/site-header.component';
 import { SystemsSectionComponent } from '../../components/systems-section/systems-section.component';
+import { TopNavbarComponent } from '../../components/top-navbar/top-navbar.component';
 
 @Component({
   selector: 'app-portfolio-page',
   standalone: true,
   imports: [
-    SiteHeaderComponent,
+    TopNavbarComponent,
     HeroSectionComponent,
     FeaturedWorkComponent,
     SystemsSectionComponent,

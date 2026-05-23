@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-site-header',
+  selector: 'app-top-navbar',
   standalone: true,
-  templateUrl: './site-header.component.html'
+  templateUrl: './top-navbar.component.html'
 })
-export class SiteHeaderComponent {
+export class TopNavbarComponent {
   protected readonly navLinks = [
     { route: '/case-study/design-system-migration-01', label: 'Case Studies', active: true },
     { href: '#systems', label: 'Systems', active: false },
