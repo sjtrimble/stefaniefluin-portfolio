@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-about-section',
+  selector: 'app-page-about',
   standalone: true,
-  templateUrl: 'about-section.component.html'
+  templateUrl: './page-about.component.html'
 })
-export class AboutSectionComponent {
+export class PageAboutComponent {
   protected readonly skills = ['Figma', 'Angular', 'VS Code', 'Github'];
 }

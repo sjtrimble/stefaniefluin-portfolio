@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { PageAboutComponent } from './components/page-about/page-about.component';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 import { CaseStudyPageComponent } from './pages/case-study-page/case-study-page.component';
 import { UnlockPageComponent } from './pages/unlock-page/unlock-page.component';
@@ -8,6 +9,10 @@ export const routes: Routes = [
 	{
 		path: '',
 		component: PortfolioPageComponent
+	},
+	{
+		path: 'about',
+		component: PageAboutComponent
 	},
 	withPasswordProtection({
 		path: 'case-study/:slug',
