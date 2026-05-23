@@ -3,24 +3,20 @@ import { CtaSectionComponent } from '../../components/cta-section/cta-section.co
 import { EngineeringSectionComponent } from '../../components/engineering-section/engineering-section.component';
 import { FeaturedWorkComponent } from '../../components/featured-work/featured-work.component';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
-import { PageAboutComponent } from '../../components/page-about/page-about.component';
-import { SiteFooterComponent } from '../../components/site-footer/site-footer.component';
+import { AboutPageComponent } from '../about-page/about-page.component';
 import { SystemsSectionComponent } from '../../components/systems-section/systems-section.component';
-import { TopNavbarComponent } from '../../components/top-navbar/top-navbar.component';
 
 @Component({
-  selector: 'app-portfolio-page',
+  selector: 'app-page-home',
   standalone: true,
   imports: [
-    TopNavbarComponent,
     HeroSectionComponent,
     FeaturedWorkComponent,
     SystemsSectionComponent,
     EngineeringSectionComponent,
-    PageAboutComponent,
-    CtaSectionComponent,
-    SiteFooterComponent
+    AboutPageComponent,
+    CtaSectionComponent
   ],
-  templateUrl: './portfolio-page.component.html'
+  templateUrl: './page-home.component.html'
 })
-export class PortfolioPageComponent {}
+export class PageHomeComponent {}

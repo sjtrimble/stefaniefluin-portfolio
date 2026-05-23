@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { PageAboutComponent } from './components/page-about/page-about.component';
-import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { CaseStudyPageComponent } from './pages/case-study-page/case-study-page.component';
 import { UnlockPageComponent } from './pages/unlock-page/unlock-page.component';
 import { withPasswordProtection } from './security/with-password-protection';
@@ -8,11 +8,11 @@ import { withPasswordProtection } from './security/with-password-protection';
 export const routes: Routes = [
 	{
 		path: '',
-		component: PortfolioPageComponent
+		component: PageHomeComponent
 	},
 	{
 		path: 'about',
-		component: PageAboutComponent
+		component: AboutPageComponent
 	},
 	withPasswordProtection({
 		path: 'case-study/:slug',
