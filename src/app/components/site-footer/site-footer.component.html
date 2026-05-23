@@ -1,0 +1,11 @@
+<footer class="site-footer rule-top">
+  <div class="container-page footer-row">
+    <div class="footer-brand">UX Architect</div>
+    <div class="footer-links">
+      @for (link of links; track link.label) {
+        <a [href]="link.href" class="label-sm text-muted">{{ link.label }}</a>
+      }
+    </div>
+    <p class="body-md text-muted footer-note">&copy; 2026 UX Architect | Available for strategic leadership roles</p>
+  </div>
+</footer>

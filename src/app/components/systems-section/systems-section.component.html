@@ -1,0 +1,34 @@
+<section id="systems" class="systems-band section-xl">
+  <div class="container-page grid-12">
+    <div class="col-5">
+      <h2 class="display-lg text-primary systems-title">Systems Thinking at Scale.</h2>
+    </div>
+
+    <div class="col-6 stack-md">
+      <p class="body-lg text-primary">
+        A design system is more than a UI kit in Figma. It is a shared vocabulary between design, engineering, and product. My philosophy centers on building accessible, resilient components that enforce consistency without stifling innovation.
+      </p>
+
+      <div class="grid-2">
+        @for (principle of principles; track principle.title) {
+          <article class="card system-card stack-xs">
+            <h3 class="label-sm text-primary">{{ principle.title }}</h3>
+            <p class="body-md text-muted">{{ principle.description }}</p>
+          </article>
+        }
+      </div>
+
+      <pre class="card token-code mono-code" ngNonBindable>// Example Token Definition
+export const typography = {
+  fontFamily: {
+    primary: ['Hanken Grotesk', 'sans-serif'],
+    editorial: ['Newsreader', 'serif'],
+  },
+  scale: {
+    base: '16px',
+    ratio: 1.25,
+  }
+};</pre>
+    </div>
+  </div>
+</section>

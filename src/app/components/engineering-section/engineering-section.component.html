@@ -1,0 +1,17 @@
+<section class="container-page section-xl collaboration rule-bottom stack-lg">
+  <div class="collab-intro stack-sm">
+    <h2 class="headline-lg text-primary">Design meets Engineering</h2>
+    <p class="body-md text-muted">
+      Design is only as good as what ships in production. I speak the language of engineers to ensure high-fidelity implementation and shared architectural alignment.
+    </p>
+  </div>
+
+  <div class="grid-3">
+    @for (pillar of pillars; track pillar.title) {
+      <article class="rule-top stack-xs collab-item">
+        <h3 class="headline-md text-primary">{{ pillar.title }}</h3>
+        <p class="body-md text-muted">{{ pillar.description }}</p>
+      </article>
+    }
+  </div>
+</section>
