@@ -1,0 +1,45 @@
+<section id="about" class="container-page section-xl grid-12 about-section">
+  <div class="col-5">
+    <img
+      class="about-photo card"
+      src="/assets/images/stefanie-headshot.jpeg"
+      alt="Professional headshot"
+    />
+  </div>
+  <div class="col-6 stack-sm">
+    <h2 class="headline-lg text-primary">The Architect behind the pixels.</h2>
+    <p class="body-lg text-muted">
+      With over a decade of experience scaling enterprise products, I have transitioned from crafting individual screens to orchestrating the systems that build them. I believe that good design is systemic, predictable, and measurable.
+    </p>
+    <p class="body-md text-muted">
+      Currently leading design systems and designing for enterprise products at a leading healthcare company, I focus on bridging the gap between product strategy and engineering execution. I mentor senior designers and actively contribute to the broader design engineering ecosystem.
+    </p>
+    <div class="tag-row">
+      @for (skill of skills; track skill) {
+        <span class="chip label-sm">{{ skill }}</span>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="container-page section-lg about-fun stack-md">
+  <header class="about-fun-header stack-xs">
+    <p class="chip label-sm">Off The Clock</p>
+    <h2 class="headline-lg text-primary">A Few Fun Things About Me</h2>
+  </header>
+
+  <div class="grid-12">
+    @for (item of funItems; track item.title) {
+      <article class="system-card col-12 about-fun-card stack-xs">
+        <p class="label-sm text-primary">{{ item.kicker }}</p>
+        <h3 class="headline-md text-primary">{{ item.title }}</h3>
+        <p class="body-md text-muted">{{ item.description }}</p>
+        <div class="about-fun-photos">
+          @for (photo of item.photos; track photo.src) {
+            <img class="about-fun-photo" [src]="photo.src" [alt]="photo.alt" loading="lazy" />
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>

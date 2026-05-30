@@ -1,0 +1,17 @@
+<section class="page-writing container-page section-xl stack-md">
+  <header class="stack-xs">
+    <h1 class="headline-xl text-primary">Writing</h1>
+    <p class="body-lg text-muted">
+      Essays and notes on design systems, product strategy, and design engineering.
+    </p>
+  </header>
+
+  <div class="grid-12 gap-md">
+    @for (article of articles; track article.title) {
+      <article class="card col-4 stack-xs p-sm">
+        <h2 class="headline-md">{{ article.title }}</h2>
+        <p class="body-md text-muted">{{ article.description }}</p>
+      </article>
+    }
+  </div>
+</section>

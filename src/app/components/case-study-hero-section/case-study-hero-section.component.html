@@ -1,0 +1,7 @@
+<section class="container-page section-lg case-study-hero stack-sm">
+  <a class="label-sm text-muted case-study-back-link" routerLink="/">&larr; Back to Portfolio</a>
+  <p class="label-sm text-muted">{{ caseStudy().client }} | {{ caseStudy().timeline }} | {{ caseStudy().role }}</p>
+  <h1 class="display-lg text-primary case-study-title">{{ caseStudy().title }}</h1>
+  <p class="body-lg text-muted case-study-subtitle">{{ caseStudy().subtitle }}</p>
+  <img class="case-study-hero-image card" [src]="caseStudy().heroImage" [alt]="caseStudy().heroImageAlt" />
+</section>

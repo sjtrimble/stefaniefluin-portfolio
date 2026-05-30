@@ -1,0 +1,16 @@
+<header class="top-navbar rule-bottom">
+  <nav class="container-page nav-row">
+    <a href="#" class="brand headline-md text-primary">UX Architect</a>
+    <div class="nav-links hide-mobile">
+      @for (link of navLinks; track link.label) {
+        @if (link.route) {
+          <a [href]="link.route" class="label-sm nav-link" [class.nav-link-active]="link.active">{{ link.label }}</a>
+        } @else {
+          <a [href]="link.href" class="label-sm nav-link" [class.nav-link-active]="link.active">{{ link.label }}</a>
+        }
+      }
+    </div>
+    <a href="#contact" class="btn btn-primary label-sm hide-mobile">Hire Me</a>
+    <button class="menu-btn show-mobile" aria-label="Open menu">Menu</button>
+  </nav>
+</header>

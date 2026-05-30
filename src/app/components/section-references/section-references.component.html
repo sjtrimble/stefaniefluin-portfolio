@@ -1,0 +1,24 @@
+<section class="section-references section-xl">
+  <div class="container-page stack-lg">
+    <header class="references-header stack-sm">
+      <p class="chip label-sm references-kicker">References</p>
+      <h2 class="display-lg references-title">
+        What it's like to work together: Kind words from great teams.
+      </h2>
+    </header>
+
+    <div class="grid-12 references-grid">
+      @for (reference of references; track reference.name) {
+        <article class="card system-card references-card col-6 stack-sm">
+          <p class="body-lg text-muted references-quote">"{{ reference.quote }}"</p>
+          <div class="stack-xs">
+            <p class="headline-md text-primary references-name">
+              {{ reference.name }} <span class="references-linkedin" aria-hidden="true">in</span>
+            </p>
+            <p class="body-md text-primary references-role">{{ reference.role }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

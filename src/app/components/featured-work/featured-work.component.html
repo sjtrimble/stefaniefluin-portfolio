@@ -1,0 +1,24 @@
+<section id="case-studies" class="container-page section-lg stack-md">
+  <div class="section-heading rule-bottom">
+    <h2 class="headline-lg text-primary">Featured Work</h2>
+    <span class="label-sm text-muted hide-mobile">Selected Projects 2021-2024</span>
+  </div>
+
+  <div class="grid-12">
+    @for (project of projects; track project.title) {
+      <article [class]="project.columnClass + ' card card-hover case-study stack-sm'">
+        <img class="case-image" [src]="project.image" [alt]="project.imageAlt" />
+        <div class="case-content stack-sm">
+          <div class="tag-row">
+            @for (tag of project.tags; track tag) {
+              <span class="chip label-sm">{{ tag }}</span>
+            }
+          </div>
+          <h3 class="headline-md text-primary">{{ project.title }}</h3>
+          <p class="body-md text-muted">{{ project.summary }}</p>
+          <a [routerLink]="['/case-study', project.slug]" class="btn btn-ghost label-sm">Read Case Study <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+    }
+  </div>
+</section>
