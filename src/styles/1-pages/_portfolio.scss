@@ -164,6 +164,43 @@
   align-items: center;
 }
 
+.about-fun {
+  border-top: 0;
+}
+
+.about-fun-header {
+  max-width: 36ch;
+
+  h2 {
+    margin: 0;
+    text-wrap: balance;
+  }
+}
+
+.about-fun-card {
+  min-height: 220px;
+
+  h3,
+  p {
+    margin: 0;
+  }
+}
+
+.about-fun-photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.about-fun-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-default);
+  border: 1px solid var(--ghost-border);
+}
+
 .section-references {
   background: var(--background);
 }
@@ -454,6 +491,10 @@
 
   .case-study-title {
     max-width: 100%;
+  }
+
+  .about-fun-photos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .references-card {

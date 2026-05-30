@@ -21,3 +21,25 @@
     </div>
   </div>
 </section>
+
+<section class="container-page section-lg about-fun stack-md">
+  <header class="about-fun-header stack-xs">
+    <p class="chip label-sm">Off The Clock</p>
+    <h2 class="headline-lg text-primary">A Few Fun Things About Me</h2>
+  </header>
+
+  <div class="grid-12">
+    @for (item of funItems; track item.title) {
+      <article class="system-card col-12 about-fun-card stack-xs">
+        <p class="label-sm text-primary">{{ item.kicker }}</p>
+        <h3 class="headline-md text-primary">{{ item.title }}</h3>
+        <p class="body-md text-muted">{{ item.description }}</p>
+        <div class="about-fun-photos">
+          @for (photo of item.photos; track photo.src) {
+            <img class="about-fun-photo" [src]="photo.src" [alt]="photo.alt" loading="lazy" />
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>
