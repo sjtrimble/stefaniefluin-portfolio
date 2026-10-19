@@ -36,7 +36,10 @@
         <p class="body-md text-muted">{{ item.description }}</p>
         <div class="about-fun-photos">
           @for (photo of item.photos; track photo.src) {
-            <img class="about-fun-photo" [src]="photo.src" [alt]="photo.alt" loading="lazy" />
+            <figure class="about-fun-photo-wrap">
+              <img class="about-fun-photo" [src]="photo.src" [alt]="photo.alt" loading="lazy" />
+              <figcaption class="label-sm text-muted about-fun-caption">{{ photo.caption || photo.alt }}</figcaption>
+            </figure>
           }
         </div>
       </article>
