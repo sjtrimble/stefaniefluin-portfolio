@@ -18,7 +18,7 @@ export class FeaturedWorkComponent {
       image:
         'https://lh3.googleusercontent.com/aida-public/AB6AXuBA8bi2snn3d6QtBVIh8EIKdSvLFaYBn-Z_sIcS4wWcKmPRJkkKrxMbnlwUUNLGcFMtvmYrnTkCV_13-tuyL0xsM-DCclOgHjWjNfpFQJRJT1fddYt3f_QR2W25EwZdkY1ZBI42vyf9twCaOHMb31iC4l1IrN-cqd4wfV-0U5GOO-xEHmFdU5nHpfULznYw5Rtxvha6FZbJkf1rE5hkomoEskC8ctaIsJpuGwkta7ApeDn0EdYRpq-VHiudV5N4EnQQXbsUBc1unYk',
       imageAlt: 'Design system migration abstract',
-      columnClass: 'col-7'
+      columnClass: 'col-4'
     },
     {
       slug: 'enterprise-saas-strategy-02',
@@ -29,7 +29,18 @@ export class FeaturedWorkComponent {
       image:
         'https://lh3.googleusercontent.com/aida-public/AB6AXuBZE_6FHdjTgO1DW6C3__YubHBWn3d-5w-hoGbl-0aN11Z8A5NQZDnUwi468GXXGXNH-9pv-Hro0JqiVetdFlh6Uou9WZOR4b-fZJYkVJ5YHzxCajQy-Dl1wvS5_XYWyFCTmHJNUstL0OVOroYvBkslppBkTeoYqDxL7hK7Ax_ua8FH6th9S82v2XbrNuDOkW6cTNrYlgBk_uiEobnJoFL4cGPV3UHrivZMoiLdOdV8SYhmnu5RqdRD13O_ZAxNH3Z3qEI7HPMBKTs',
       imageAlt: 'Enterprise SaaS dashboard',
-      columnClass: 'col-5'
+      columnClass: 'col-4'
+    },
+    {
+      slug: 'product-systems-03',
+      title: 'Product Systems & Enablement',
+      summary:
+        'Built a shared design and content system that aligned product, marketing, and engineering teams around a single delivery model.',
+      tags: ['Systems Thinking', 'Leadership'],
+      image:
+        'https://lh3.googleusercontent.com/aida-public/AB6AXuBA8bi2snn3d6QtBVIh8EIKdSvLFaYBn-Z_sIcS4wWcKmPRJkkKrxMbnlwUUNLGcFMtvmYrnTkCV_13-tuyL0xsM-DCclOgHjWjNfpFQJRJT1fddYt3f_QR2W25EwZdkY1ZBI42vyf9twCaOHMb31iC4l1IrN-cqd4wfV-0U5GOO-xEHmFdU5nHpfULznYw5Rtxvha6FZbJkf1rE5hkomoEskC8ctaIsJpuGwkta7ApeDn0EdYRpq-VHiudV5N4EnQQXbsUBc1unYk',
+      imageAlt: 'Product systems overview',
+      columnClass: 'col-4'
     }
   ];
 }
