@@ -59,6 +59,27 @@
   align-items: center;
 }
 
+.hero-copy-wrap {
+  align-self: center;
+}
+
+.hero-portrait-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-portrait {
+  width: min(100%, 500px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 1px solid var(--ghost-border);
+  background: var(--surface-container);
+  box-shadow: var(--ambient-shadow-sm);
+  margin-inline: auto;
+}
+
 .hero-kicker {
   width: fit-content;
   background: var(--surface-container);
