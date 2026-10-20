@@ -6,6 +6,15 @@
         <a [href]="link.href" class="label-sm text-muted">{{ link.label }}</a>
       }
     </div>
-    <p class="body-md text-muted footer-note">&copy; 2026 Stefanie Fluin | Available for strategic leadership roles</p>
+    <p class="body-md text-muted footer-note">
+      <span>
+        &copy; 2026 Stefanie Fluin | 
+      </span>
+      @if (hireMode()) {
+        <span>
+          Available for strategic leadership roles
+        </span>
+      }
+    </p>
   </div>
 </footer>
