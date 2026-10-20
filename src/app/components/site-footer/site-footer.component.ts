@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 export class SiteFooterComponent {
   protected readonly links = [
     { href: '#', label: 'LinkedIn' },
-    { href: '#', label: 'Read.cv' },
-    { href: 'mailto:hello@example.com', label: 'Email' },
+    { href: 'mailto:sjtrimble@gmail.com', label: 'Email' },
     { href: '#', label: 'Source Code' }
   ];
 }

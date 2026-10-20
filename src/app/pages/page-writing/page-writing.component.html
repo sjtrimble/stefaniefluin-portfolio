@@ -11,6 +11,14 @@
       <article class="card col-4 stack-xs p-sm">
         <h2 class="headline-md">{{ article.title }}</h2>
         <p class="body-md text-muted">{{ article.description }}</p>
+        <a
+          class="body-sm text-primary"
+          [href]="article.link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read article ↗
+        </a>
       </article>
     }
   </div>
