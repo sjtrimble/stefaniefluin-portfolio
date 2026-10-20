@@ -16,20 +16,20 @@ export class AboutPageComponent {
         'I rarely miss a Minnesota Wild game. I love the speed, strategy, and momentum swings that make hockey such a fun reset from the work week.',
       photos: [
         {
+          src: '/assets/images/wild-spirit.jpg',
+          alt: 'At a Wild hockey game holding a puck',
+          caption: 'Playoffs games are the best'
+        },
+        {
           src: '/assets/images/wild01.jpg',
-          alt: 'Stefanie at a hockey game',
-          caption: 'Pregame energy'
+          alt: 'Grand Casino Arena hockey',
+          caption: 'The beauty of fresh ice'
         },
         {
-          src: '/assets/images/sf-2019.png',
-          alt: 'Arena lights before puck drop',
-          caption: 'Lights before puck drop'
+          src: '/assets/images/skating.jpg',
+          alt: 'Standing on the Grand Casino Arena ice',
+          caption: 'Attempting to learn to play hockey'
         },
-        {
-          src: '/assets/images/sf-2019-old.jpg',
-          alt: 'Crowd energy during a game',
-          caption: 'Crowd in full voice'
-        }
       ]
     },
     {
@@ -41,17 +41,17 @@ export class AboutPageComponent {
         {
           src: '/assets/images/japan.jpg',
           alt: 'Travel moment in Japan',
-          caption: 'Tokyo at night'
+          caption: 'Tokyo temple'
         },
         {
           src: '/assets/images/china.JPG',
           alt: 'Street and architecture details in China',
-          caption: 'Street details in Shanghai'
+          caption: 'Zhujiajiao ancient watertown'
         },
         {
           src: '/assets/images/costarica.jpg',
           alt: 'Portrait during a travel day in Costa Rica',
-          caption: 'Costa Rica coast day'
+          caption: 'Costa Rica Tamarindo sunset'
         }
       ]
     }
