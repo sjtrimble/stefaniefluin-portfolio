@@ -5,11 +5,11 @@ export type CaseStudySection =
 
 export interface CaseStudy {
   slug: string;
+  featured: boolean;
   title: string;
   summary?: string;
   subtitle: string;
   client: string;
-  timeline: string;
   role: string;
   tags?: string[];
   heroImage: string;

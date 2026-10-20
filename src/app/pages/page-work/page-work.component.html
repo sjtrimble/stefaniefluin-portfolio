@@ -20,7 +20,7 @@
 
           <h2 class="headline-md text-primary">{{ caseStudy.title }}</h2>
           <p class="body-md text-muted">{{ caseStudy.summary ?? caseStudy.subtitle }}</p>
-          <p class="label-sm text-muted">{{ caseStudy.client }} | {{ caseStudy.timeline }}</p>
+          <p class="label-sm text-muted">{{ caseStudy.client }}</p>
           <a [routerLink]="['/case-study', caseStudy.slug]" class="btn btn-ghost label-sm">
             Read Case Study <span aria-hidden="true">&rarr;</span>
           </a>
