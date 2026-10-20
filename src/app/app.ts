@@ -16,6 +16,6 @@ export class App {
   protected readonly hireMode = this.hireModeService.hireMode;
 
   constructor() {
-    this.hireModeService.setHireMode(true);
+    this.hireModeService.setHireMode(false);
   }
 }
