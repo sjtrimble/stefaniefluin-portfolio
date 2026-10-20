@@ -8,14 +8,23 @@
 
   <div class="grid-12 gap-md">
     @for (caseStudy of caseStudies; track caseStudy.slug) {
-      <article class="card col-6 stack-sm p-sm">
+      <article class="card card-hover case-study col-6 stack-sm">
         <img class="case-image" [src]="caseStudy.heroImage" [alt]="caseStudy.heroImageAlt" />
-        <h2 class="headline-md text-primary">{{ caseStudy.title }}</h2>
-        <p class="body-md text-muted">{{ caseStudy.subtitle }}</p>
-        <p class="label-sm text-muted">{{ caseStudy.client }} | {{ caseStudy.timeline }}</p>
-        <a [routerLink]="['/case-study', caseStudy.slug]" class="btn btn-ghost label-sm">
-          Read Case Study <span aria-hidden="true">&rarr;</span>
-        </a>
+
+        <div class="case-content stack-sm">
+          <div class="tag-row">
+            @for (tag of caseStudy.tags ?? []; track tag) {
+              <span class="chip label-sm">{{ tag }}</span>
+            }
+          </div>
+
+          <h2 class="headline-md text-primary">{{ caseStudy.title }}</h2>
+          <p class="body-md text-muted">{{ caseStudy.summary ?? caseStudy.subtitle }}</p>
+          <p class="label-sm text-muted">{{ caseStudy.client }} | {{ caseStudy.timeline }}</p>
+          <a [routerLink]="['/case-study', caseStudy.slug]" class="btn btn-ghost label-sm">
+            Read Case Study <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
       </article>
     }
   </div>

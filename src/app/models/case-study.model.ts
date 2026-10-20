@@ -6,10 +6,12 @@ export type CaseStudySection =
 export interface CaseStudy {
   slug: string;
   title: string;
+  summary?: string;
   subtitle: string;
   client: string;
   timeline: string;
   role: string;
+  tags?: string[];
   heroImage: string;
   heroImageAlt: string;
   sections: CaseStudySection[];
