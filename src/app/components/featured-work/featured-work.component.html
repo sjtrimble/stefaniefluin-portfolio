@@ -8,10 +8,10 @@
     @for (project of projects; track project.title) {
       <a
         [routerLink]="['/work', project.slug]"
-        [class]="project.columnClass + ' case-study-card-link'"
+        [class]="project.columnClass + ' case-study-card-link featured-work-card-link'"
         [attr.aria-label]="'Read case study: ' + project.title"
       >
-        <article class="card card-hover case-study stack-sm">
+        <article class="card card-hover case-study featured-work-card stack-sm">
           <img class="case-image" [src]="project.image" [alt]="project.imageAlt" />
           <div class="case-content stack-sm">
             <div class="tag-row">

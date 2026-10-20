@@ -117,6 +117,10 @@
   color: inherit;
 }
 
+.featured-work-card-link {
+  height: 100%;
+}
+
 .case-study {
   overflow: hidden;
   transition: opacity var(--motion-base) var(--motion-standard-ease);
@@ -124,6 +128,22 @@
   &:hover {
     opacity: 0.9;
   }
+}
+
+.featured-work-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.featured-work-card .case-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.featured-work-card .btn {
+  margin-top: auto;
 }
 
 .case-image {
