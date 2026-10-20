@@ -177,5 +177,27 @@ export const CASE_STUDIES: CaseStudy[] = [
         ]
       }
     ]
+  },
+  {
+    slug: 'cobalt',
+    featured: true,
+    title: 'Solventum Product Design System - Coming Soon',
+    summary: 'Rebranding the official Solventum product design system from the ground up.',
+    subtitle: '',
+    client: '',
+    role: 'Product Owner and UX Design Lead',
+    tags: ['Design System', 'Rebranding', 'Project Management'],
+    heroImage: '../assets/images/work-placeholder.jpeg',
+    heroImageAlt: '',
+    sections: [
+      {
+        type: 'rich-text',
+        kicker: 'Something exciting is coming',
+        heading: 'Coming Soon',
+        body: [
+          'A story about rebranding, and more.'
+        ]
+      }
+    ]
   }
 ];
