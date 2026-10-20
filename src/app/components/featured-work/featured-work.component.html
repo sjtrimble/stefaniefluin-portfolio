@@ -6,19 +6,25 @@
 
   <div class="grid-12">
     @for (project of projects; track project.title) {
-      <article [class]="project.columnClass + ' card card-hover case-study stack-sm'">
-        <img class="case-image" [src]="project.image" [alt]="project.imageAlt" />
-        <div class="case-content stack-sm">
-          <div class="tag-row">
-            @for (tag of project.tags; track tag) {
-              <span class="chip label-sm">{{ tag }}</span>
-            }
+      <a
+        [routerLink]="['/work', project.slug]"
+        [class]="project.columnClass + ' case-study-card-link'"
+        [attr.aria-label]="'Read case study: ' + project.title"
+      >
+        <article class="card card-hover case-study stack-sm">
+          <img class="case-image" [src]="project.image" [alt]="project.imageAlt" />
+          <div class="case-content stack-sm">
+            <div class="tag-row">
+              @for (tag of project.tags; track tag) {
+                <span class="chip label-sm">{{ tag }}</span>
+              }
+            </div>
+            <h3 class="headline-md text-primary">{{ project.title }}</h3>
+            <p class="body-md text-muted">{{ project.summary }}</p>
+            <span class="btn btn-ghost label-sm">Read Case Study <span aria-hidden="true">&rarr;</span></span>
           </div>
-          <h3 class="headline-md text-primary">{{ project.title }}</h3>
-          <p class="body-md text-muted">{{ project.summary }}</p>
-          <a [routerLink]="['/work', project.slug]" class="btn btn-ghost label-sm">Read Case Study <span aria-hidden="true">&rarr;</span></a>
-        </div>
-      </article>
+        </article>
+      </a>
     }
   </div>
 </section>
