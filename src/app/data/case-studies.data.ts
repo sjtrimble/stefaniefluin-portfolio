@@ -12,7 +12,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     role: 'UX Design Lead and UX Engineer',
     tags: ['UX Design', 'Onboarding'],
     heroImage:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBA8bi2snn3d6QtBVIh8EIKdSvLFaYBn-Z_sIcS4wWcKmPRJkkKrxMbnlwUUNLGcFMtvmYrnTkCV_13-tuyL0xsM-DCclOgHjWjNfpFQJRJT1fddYt3f_QR2W25EwZdkY1ZBI42vyf9twCaOHMb31iC4l1IrN-cqd4wfV-0U5GOO-xEHmFdU5nHpfULznYw5Rtxvha6FZbJkf1rE5hkomoEskC8ctaIsJpuGwkta7ApeDn0EdYRpq-VHiudV5N4EnQQXbsUBc1unYk',
+      '../assets/images/work/surepayroll-onboarding.png',
     heroImageAlt: 'Design system migration project visual',
     sections: [
       {
@@ -75,7 +75,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     role: 'UX Design Lead and UX Engineer',
     tags: ['UX Design', 'Technical Documentation', 'Onboarding'],
     heroImage:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBZE_6FHdjTgO1DW6C3__YubHBWn3d-5w-hoGbl-0aN11Z8A5NQZDnUwi468GXXGXNH-9pv-Hro0JqiVetdFlh6Uou9WZOR4b-fZJYkVJ5YHzxCajQy-Dl1wvS5_XYWyFCTmHJNUstL0OVOroYvBkslppBkTeoYqDxL7hK7Ax_ua8FH6th9S82v2XbrNuDOkW6cTNrYlgBk_uiEobnJoFL4cGPV3UHrivZMoiLdOdV8SYhmnu5RqdRD13O_ZAxNH3Z3qEI7HPMBKTs',
+      '../assets/images/work/case-study-angular/aio-after.png',
     heroImageAlt: 'Enterprise SaaS analytics visual',
     sections: [
       {
