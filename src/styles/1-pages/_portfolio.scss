@@ -107,7 +107,7 @@
 .section-heading {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   padding-bottom: var(--space-sm);
 }
 
@@ -510,10 +510,6 @@
 
   .hero-title {
     max-width: 100%;
-  }
-
-  .section-heading {
-    align-items: center;
   }
 
   .case-image {

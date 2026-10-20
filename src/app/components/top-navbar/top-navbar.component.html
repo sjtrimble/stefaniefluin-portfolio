@@ -1,12 +1,18 @@
 <header class="top-navbar rule-bottom">
   <nav class="container-page nav-row">
-    <a href="#" class="brand headline-md text-primary">Stefanie Fluin</a>
+    <a [routerLink]="['/']" class="brand headline-md text-primary">Stefanie Fluin</a>
     <div class="nav-links hide-mobile">
       @for (link of navLinks; track link.label) {
         @if (link.route) {
-          <a [href]="link.route" class="label-sm nav-link" [class.nav-link-active]="link.active">{{ link.label }}</a>
+          <a
+            [routerLink]="[link.route]"
+            class="label-sm nav-link"
+            routerLinkActive="nav-link-active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [class.nav-link-active]="link.route === '/work' && isCaseStudiesActive()"
+          >{{ link.label }}</a>
         } @else {
-          <a [href]="link.href" class="label-sm nav-link" [class.nav-link-active]="link.active">{{ link.label }}</a>
+          <a [href]="link.href" class="label-sm nav-link">{{ link.label }}</a>
         }
       }
     </div>
