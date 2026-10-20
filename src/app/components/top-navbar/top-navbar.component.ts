@@ -13,8 +13,7 @@ export class TopNavbarComponent {
   protected readonly navLinks = [
     { route: '/work', label: 'Work' },
     { route: '/writing', label: 'Writing' },
-    { route: '/about', label: 'About' },
-    { href: '#contact', label: 'Contact' }
+    { route: '/about', label: 'About' }
   ];
 
   protected isCaseStudiesActive(): boolean {

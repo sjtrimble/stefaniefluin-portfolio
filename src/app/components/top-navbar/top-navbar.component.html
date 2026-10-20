@@ -11,9 +11,10 @@
             [routerLinkActiveOptions]="{ exact: true }"
             [class.nav-link-active]="link.route === '/work' && isCaseStudiesActive()"
           >{{ link.label }}</a>
-        } @else {
+        } 
+        <!-- @else {
           <a [href]="link.href" class="label-sm nav-link">{{ link.label }}</a>
-        }
+        } -->
       }
     </div>
     <a href="#contact" class="btn btn-primary label-sm hide-mobile">Contact</a>
