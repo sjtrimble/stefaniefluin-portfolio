@@ -9,6 +9,6 @@ export class SiteFooterComponent {
   protected readonly links = [
     { href: '#', label: 'LinkedIn' },
     { href: 'mailto:sjtrimble@gmail.com', label: 'Email' },
-    { href: '#', label: 'Source Code' }
+    { href: '/newsletter', label: 'Newsletter' }
   ];
 }

@@ -5,6 +5,7 @@ import { PageWritingComponent } from './pages/page-writing/page-writing.componen
 import { PageWorkComponent } from './pages/page-work/page-work.component';
 import { CaseStudyPageComponent } from './pages/case-study-page/case-study-page.component';
 import { UnlockPageComponent } from './pages/unlock-page/unlock-page.component';
+import { NewsletterPageComponent } from './pages/newsletter-page/newsletter-page.component';
 import { withPasswordProtection } from './security/with-password-protection';
 
 export const routes: Routes = [
@@ -23,6 +24,10 @@ export const routes: Routes = [
 	{
 		path: 'work',
 		component: PageWorkComponent
+	},
+	{
+		path: 'newsletter',
+		component: NewsletterPageComponent
 	},
 	withPasswordProtection({
 		path: 'work/:slug',
