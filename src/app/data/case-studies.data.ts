@@ -17,49 +17,69 @@ export const CASE_STUDIES: CaseStudy[] = [
     sections: [
       {
         type: 'rich-text',
-        kicker: 'Context',
-        heading: 'The challenge',
+        kicker: 'Project Summary',
+        heading: 'Project summary',
         body: [
-          'Twelve product squads shipped UI independently, creating visual drift and duplicated engineering effort.',
-          'I led a migration strategy that aligned design, engineering, and product operations under a shared token and component architecture.'
+          'The goal of this project was to create a new and improved streamlined onboarding experience for SurePayroll\'s small business customers. The primary focus was to increase the conversion rate and update the UI and aesthetics to a more modern look and feel.',
+          'The primary challenge of this project was that payroll accounting is a very complex system with lots of rules, regulations, and exceptions. Providing a seamless experience to the user while navigating the payroll intricacies smoothly was something we aimed to provide in the design and experience.'
         ]
       },
       {
-        type: 'metrics',
-        heading: 'Impact',
-        items: [
-          {
-            label: 'Velocity',
-            value: '+40%',
-            detail: 'Increase in feature delivery speed after component consolidation.'
-          },
-          {
-            label: 'UI Bugs',
-            value: '-32%',
-            detail: 'Reduction in production regressions linked to interface inconsistency.'
-          },
-          {
-            label: 'Adoption',
-            value: '12 squads',
-            detail: 'Design system adopted across every active product team.'
-          }
+        type: 'rich-text',
+        kicker: 'The Challenge',
+        heading: 'The challenge',
+        body: [
+          'There were branding and design constraints to consider as SurePayroll wanted to refresh their outdated experience while remaining similar enough to their branding guidelines at the time.',
+          'The new flow needed to feel approachable and modern without overwhelming users with the complexity behind payroll rules, compliance, and customer exceptions.'
         ]
       },
       {
         type: 'image',
-        heading: 'System architecture snapshot',
-        image:
-          'https://lh3.googleusercontent.com/aida-public/AB6AXuBZE_6FHdjTgO1DW6C3__YubHBWn3d-5w-hoGbl-0aN11Z8A5NQZDnUwi468GXXGXNH-9pv-Hro0JqiVetdFlh6Uou9WZOR4b-fZJYkVJ5YHzxCajQy-Dl1wvS5_XYWyFCTmHJNUstL0OVOroYvBkslppBkTeoYqDxL7hK7Ax_ua8FH6th9S82v2XbrNuDOkW6cTNrYlgBk_uiEobnJoFL4cGPV3UHrivZMoiLdOdV8SYhmnu5RqdRD13O_ZAxNH3Z3qEI7HPMBKTs',
-        imageAlt: 'Dashboard and component system visual',
-        caption: 'A modularized dashboard shell built on shared foundations and semantic tokens.'
+        heading: 'Low-fidelity wireframes',
+        image: '../assets/images/work/sp-lf-wireframes.png',
+        imageAlt: 'SurePayroll onboarding low fidelity wireframes workflow screenshot from Adobe XD',
+        caption: 'The project kicked off with a week-long discovery phase that included technical interviews, subject matter expert sessions, and executive workshops. Once the goals and payroll accounting caveats were established, I produced low-fidelity wireframes and a clickable prototype to demonstrate the user flow of the new onboarding experience.'
       },
       {
         type: 'rich-text',
-        kicker: 'Execution',
-        heading: 'How we made adoption inevitable',
+        kicker: 'The Solution',
+        heading: 'The solution',
         body: [
-          'We started with critical workflows and built an incremental migration path with codemods and Storybook documentation.',
-          'Each release included measurable quality gates, which turned design consistency into an operational KPI rather than a visual preference.'
+          'Immersive on-site workshops brought together management, stakeholders, and subject matter experts to understand the existing onboarding experience, goals, desires, and payer complexity.',
+          'The design direction focused on simplifying decision points, clarifying next steps, and creating a more modern visual language that still felt aligned with SurePayroll\'s brand.',
+          'The final system included updated typography, colors, and core components such as buttons, alerts, badges, and more, making the experience feel consistent and easier to navigate.'
+        ]
+      },
+      {
+        type: 'image',
+        heading: 'Design system',
+        image: '../assets/images/work/sp-design-system.png',
+        imageAlt: 'SurePayroll design system document pages',
+        caption: 'A design system that stayed close to the existing visual framework while modernizing the experience for onboarding flows and core interactions.'
+      },
+      {
+        type: 'metrics',
+        heading: 'Results',
+        items: [
+          {
+            label: 'Conversion',
+            value: '+24%',
+            detail: 'Increase in overall onboarding conversion rates.'
+          },
+          {
+            label: 'Complex history customers',
+            value: '+7.3%',
+            detail: 'Increase in conversion for customers with complex payroll history.'
+          }
+        ]
+      },
+      {
+        type: 'rich-text',
+        kicker: 'Impact',
+        heading: 'A material impact',
+        body: [
+          'The redesigned experience gave small business customers a clearer path through enrollment while reducing the complexity of payroll setup and onboarding.',
+          'I\'m grateful for this opportunity and having had the chance to have a material impact through the application of human-centered design.'
         ]
       }
     ]
@@ -67,23 +87,93 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'angular',
     featured: true,
-    title: 'Official Angular Website & More',
+    title: 'Official Angular Website',
     summary:
       'An easy-to-use website tailored to a technical user base.',
-    subtitle: 'Making technical content accessible and user-friendly.',
-    client: 'Angular @Google',
-    role: 'UX Design Lead and UX Engineer',
-    tags: ['UX Design', 'Technical Documentation', 'Onboarding'],
+    subtitle: 'An easy-to-use website tailored to a technical user base.',
+    client: 'Angular',
+    role: 'UX Lead and Engineer',
+    tags: ['UX Design', 'Technical Documentation', 'Design Systems'],
     heroImage:
       '../assets/images/work/case-study-angular/aio-after.png',
-    heroImageAlt: 'Enterprise SaaS analytics visual',
+    heroImageAlt: 'Official Angular documentation website final result image on desktop and mobile phone mockups',
     sections: [
       {
         type: 'rich-text',
-        heading: 'Overview',
+        kicker: 'Project Summary',
+        heading: 'Project summary',
         body: [
-          'This template entry exists to demonstrate a scalable suffix-based slug and reusable section composition.',
-          'Duplicate this object and update content to publish additional case studies without creating new page components.'
+          'The goal of this project was to redesign the official Angular website, primarily the technical documentation portion. We needed to provide a developer-focused user experience that emphasized the navigation, exploration and consumption of highly technical content.',
+          'Team: Product Owner, Technical Lead, 3 Developers, UX Designer & Engineer (myself).'
+        ]
+      },
+      {
+        type: 'rich-text',
+        kicker: 'The Challenge',
+        heading: 'The challenge',
+        body: [
+          'Large amounts of technical content and required emphasis on usability and component design surrounding this philosophy. This meant that having an accessible and mobile-friendly experience was a priority.',
+          'Angular desired a website refresh to match the buzz and excitement around their newly re-written platform.'
+        ]
+      },
+      {
+        type: 'image',
+        heading: 'Before the redesign',
+        image: '../assets/images/work/case-study-angular/aio-before.png',
+        imageAlt: 'Angular documentation website before any design styles were applied',
+        caption: 'This is what the project looked like when I onboarded.'
+      },
+      {
+        type: 'rich-text',
+        kicker: 'The Solution',
+        heading: 'Mockups & concept exploration',
+        body: [
+          'I provided mockups and element designs with various alternatives. These mockups were used to discuss with the technical team prior to finalizing implementation. Some of the items explored through mockups included the navigation system, the search feature, the table of contents element, and several page layouts such as the marketing and community pages.'
+        ]
+      },
+      {
+        type: 'image',
+        heading: 'Exploration directions',
+        image: '../assets/images/work/case-study-angular/aio-design-dark.png',
+        imageAlt: 'Angular documentation website mockups based on a dark black and red theme',
+        caption: 'Concept exploration helped align the team on the navigation, hierarchy, and visual direction before implementation.'
+      },
+      {
+        type: 'rich-text',
+        heading: 'Design system & branding',
+        body: [
+          'I developed an on-brand design system that remained within the existing Angular branding style guide. The design system included style specifications for typography, colors (following Google Material Design colors), buttons, callouts and alert information boxes, links, table of content elements, code blocks and text, and more.'
+        ]
+      },
+      {
+        type: 'image',
+        heading: 'Style guidelines',
+        image: '../assets/images/work/case-study-angular/aio-style-guidelines.png',
+        imageAlt: 'Official Angular website style guidelines document',
+        caption: 'A practical design system grounded in Angular’s branding while supporting technical documentation patterns and accessibility.'
+      },
+      {
+        type: 'rich-text',
+        kicker: 'The Results',
+        heading: 'The results',
+        body: [
+          'The angular.io website is currently viewed about 1.5 million times each month!',
+          'Although the focus of the project was surrounding the technical portion of the website, the landing page was very important as it established the initial branding experience for the platform. The mockup I designed was very different from the original website and went on to be used in several implementations such as presentations, third party websites, etc. and becoming a staple element for the Angular brand.'
+        ]
+      },
+      {
+        type: 'image',
+        heading: 'Final result',
+        image: '../assets/images/work/case-study-angular/aio-after.png',
+        imageAlt: 'Official Angular documentation website final result image on desktop and mobile phone mockups',
+        caption: 'The final experience balanced technical clarity with a stronger brand presence for the Angular platform.'
+      },
+      {
+        type: 'rich-text',
+        kicker: 'Impact',
+        heading: 'A rewarding collaboration',
+        body: [
+          'Working with the Google Angular team was incredibly rewarding - the team was a pleasure to work with and the rigorous Google methodologies taught me a great deal about software development processes and working within a blended team.'
         ]
       }
     ]
