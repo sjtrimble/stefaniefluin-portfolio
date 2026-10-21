@@ -6,6 +6,7 @@ import { HeroSectionComponent } from '../../components/hero-section/hero-section
 import { AboutPageComponent } from '../about-page/about-page.component';
 import { SectionReferencesComponent } from '../../components/section-references/section-references.component';
 import { SystemsSectionComponent } from '../../components/systems-section/systems-section.component';
+import { WhyMeSectionComponent } from '../../components/why-me-section/why-me-section.component';
 
 @Component({
   selector: 'app-page-home',
@@ -15,6 +16,7 @@ import { SystemsSectionComponent } from '../../components/systems-section/system
     FeaturedWorkComponent,
     SystemsSectionComponent,
     EngineeringSectionComponent,
+    WhyMeSectionComponent,
     AboutPageComponent,
     SectionReferencesComponent,
     CtaSectionComponent

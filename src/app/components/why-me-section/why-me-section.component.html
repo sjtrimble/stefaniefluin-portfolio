@@ -1,0 +1,21 @@
+<section class="container-page section-xl">
+  <header class="references-header stack-sm">
+    <p class="chip label-sm references-kicker">Why me?</p>
+    <h2 class="display-lg references-title">
+      What I Bring to the Table
+    </h2>
+  </header>
+
+  <div class="grid-3 mt-lg">
+    @for (strength of strengths; track strength.title) {
+      <article class="card stack-sm p-lg">
+        <div class="d-inline-flex items-center justify-center" style="width: 2.75rem; height: 2.75rem; border-radius: 999px; color: var(--primary); background: rgba(22, 160, 163, 0.1);">
+          <svg [lucideIcon]="strength.icon" [size]="20" aria-hidden="true" focusable="false"></svg>
+        </div>
+
+        <h3 class="headline-md text-primary m-0">{{ strength.title }}</h3>
+        <p class="body-md text-muted m-0">{{ strength.description }}</p>
+      </article>
+    }
+  </div>
+</section>
