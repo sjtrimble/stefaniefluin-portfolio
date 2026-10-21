@@ -21,6 +21,41 @@
       <a href="https://drive.google.com/file/d/1jzAyJliyKcs9vq_kKaHM8pZtgxmUN5VH/view?usp=sharing" class="btn btn-secondary label-sm" target="_blank">Resume</a>
       <a href="#contact" class="btn btn-primary label-sm hide-mobile">Contact</a>
     </div>
-    <button class="menu-btn show-mobile" aria-label="Open menu">Menu</button>
+    <button
+      type="button"
+      class="menu-btn show-mobile"
+      [attr.aria-label]="menuOpen ? 'Close menu' : 'Open menu'"
+      aria-controls="mobile-main-menu"
+      [attr.aria-expanded]="menuOpen"
+      (click)="toggleMenu()"
+    >
+      {{ menuOpen ? 'Close' : 'Menu' }}
+    </button>
+
+    <div id="mobile-main-menu" class="mobile-menu show-mobile" [class.mobile-menu-open]="menuOpen">
+      <div class="mobile-menu-links">
+        @for (link of navLinks; track link.label) {
+          @if (link.route) {
+            <a
+              [routerLink]="[link.route]"
+              class="label-sm nav-link"
+              routerLinkActive="nav-link-active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              [class.nav-link-active]="link.route === '/work' && isCaseStudiesActive()"
+              (click)="closeMenu()"
+            >{{ link.label }}</a>
+          }
+        }
+      </div>
+      <div class="mobile-menu-actions">
+        <a
+          href="https://drive.google.com/file/d/1jzAyJliyKcs9vq_kKaHM8pZtgxmUN5VH/view?usp=sharing"
+          class="btn btn-secondary label-sm"
+          target="_blank"
+          (click)="closeMenu()"
+        >Resume</a>
+        <a href="#contact" class="btn btn-primary label-sm" (click)="closeMenu()">Contact</a>
+      </div>
+    </div>
   </nav>
 </header>

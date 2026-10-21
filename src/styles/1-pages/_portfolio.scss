@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   gap: var(--space-sm);
 }
 
@@ -58,6 +59,10 @@
   background: transparent;
   color: var(--primary);
   padding: 8px 12px;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .hero-section {
@@ -532,8 +537,53 @@
     backdrop-filter: none;
   }
 
+  .featured-work-card-link.col-4 {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
   .nav-row {
     min-height: 64px;
+    flex-wrap: wrap;
+    row-gap: var(--space-sm);
+    padding: 1rem 0;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .menu-btn {
+    margin-left: auto;
+  }
+
+  .mobile-menu-open {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0 var(--space-md);
+  }
+
+  .mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    align-items: flex-start;
+  }
+
+  .mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+
+    a {
+      width: 100%;
+    }
   }
 
   .hero-section {
