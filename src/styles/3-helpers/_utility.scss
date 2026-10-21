@@ -448,6 +448,24 @@ $spaces: (
   color: var(--primary);
 }
 
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  min-width: 2.75rem;
+  padding: 0;
+  border-radius: 999px;
+}
+
+.btn-icon svg,
+.btn-icon .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: currentColor;
+}
+
 .rule-bottom {
   border-bottom: 1px solid var(--outline-variant);
 }

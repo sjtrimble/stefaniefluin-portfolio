@@ -53,14 +53,6 @@
   gap: var(--space-sm);
 }
 
-.menu-btn {
-  border: 1px solid var(--ghost-border);
-  border-radius: var(--radius-default);
-  background: transparent;
-  color: var(--primary);
-  padding: 8px 12px;
-}
-
 .mobile-menu {
   display: none;
 }
@@ -557,7 +549,7 @@
     display: none;
   }
 
-  .menu-btn {
+  .btn-icon {
     margin-left: auto;
   }
 

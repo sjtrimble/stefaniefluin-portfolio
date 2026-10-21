@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { LucideMenu } from '@lucide/angular';
 
 @Component({
   selector: 'app-top-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, LucideMenu],
   templateUrl: './top-navbar.component.html'
 })
 export class TopNavbarComponent {

@@ -23,13 +23,13 @@
     </div>
     <button
       type="button"
-      class="menu-btn show-mobile"
+      class="btn btn-ghost show-mobile"
       [attr.aria-label]="menuOpen ? 'Close menu' : 'Open menu'"
       aria-controls="mobile-main-menu"
       [attr.aria-expanded]="menuOpen"
       (click)="toggleMenu()"
     >
-      {{ menuOpen ? 'Close' : 'Menu' }}
+      <svg lucideMenu [size]="20" aria-hidden="true" focusable="false"></svg>
     </button>
 
     <div id="mobile-main-menu" class="mobile-menu show-mobile" [class.mobile-menu-open]="menuOpen">
