@@ -1,0 +1,29 @@
+<section class="container-page section-xl unlock-page">
+  <div class="card unlock-card stack-sm">
+    <p class="label-sm text-muted">Protected Route</p>
+    <h1 class="headline-lg text-primary unlock-title">Enter Password</h1>
+    <p class="body-md text-muted">This page is password-protected. Enter the password to continue.</p>
+
+    <form class="stack-sm" (ngSubmit)="submit()">
+      <label class="label-sm text-muted" for="password-input">Password</label>
+      <input
+        id="password-input"
+        name="password"
+        type="password"
+        class="unlock-input body-md"
+        [(ngModel)]="password"
+        autocomplete="current-password"
+        required
+      />
+
+      @if (error()) {
+        <p class="body-md unlock-error">{{ error() }}</p>
+      }
+
+      <div class="unlock-actions">
+        <button type="submit" class="btn btn-primary label-sm">Unlock</button>
+        <a routerLink="/" class="btn btn-secondary label-sm">Cancel</a>
+      </div>
+    </form>
+  </div>
+</section>

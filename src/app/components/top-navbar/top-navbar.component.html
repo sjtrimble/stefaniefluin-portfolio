@@ -1,0 +1,61 @@
+<header class="top-navbar rule-bottom">
+  <nav class="container-page nav-row">
+    <a [routerLink]="['/']" class="brand headline-md text-primary">Stefanie Fluin</a>
+    <div class="nav-links hide-mobile">
+      @for (link of navLinks; track link.label) {
+        @if (link.route) {
+          <a
+            [routerLink]="[link.route]"
+            class="label-sm nav-link"
+            routerLinkActive="nav-link-active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [class.nav-link-active]="link.route === '/work' && isCaseStudiesActive()"
+          >{{ link.label }}</a>
+        } 
+        <!-- @else {
+          <a [href]="link.href" class="label-sm nav-link">{{ link.label }}</a>
+        } -->
+      }
+    </div>
+    <div class="nav-actions">
+      <a href="https://drive.google.com/file/d/1jzAyJliyKcs9vq_kKaHM8pZtgxmUN5VH/view?usp=sharing" class="btn btn-secondary label-sm" target="_blank">Resume</a>
+      <a href="#contact" class="btn btn-primary label-sm hide-mobile">Contact</a>
+    </div>
+    <button
+      type="button"
+      class="btn btn-ghost show-mobile"
+      [attr.aria-label]="menuOpen ? 'Close menu' : 'Open menu'"
+      aria-controls="mobile-main-menu"
+      [attr.aria-expanded]="menuOpen"
+      (click)="toggleMenu()"
+    >
+      <svg lucideMenu [size]="20" aria-hidden="true" focusable="false"></svg>
+    </button>
+
+    <div id="mobile-main-menu" class="mobile-menu show-mobile" [class.mobile-menu-open]="menuOpen">
+      <div class="mobile-menu-links">
+        @for (link of navLinks; track link.label) {
+          @if (link.route) {
+            <a
+              [routerLink]="[link.route]"
+              class="label-sm nav-link"
+              routerLinkActive="nav-link-active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              [class.nav-link-active]="link.route === '/work' && isCaseStudiesActive()"
+              (click)="closeMenu()"
+            >{{ link.label }}</a>
+          }
+        }
+      </div>
+      <div class="mobile-menu-actions">
+        <a
+          href="https://drive.google.com/file/d/1jzAyJliyKcs9vq_kKaHM8pZtgxmUN5VH/view?usp=sharing"
+          class="btn btn-secondary label-sm"
+          target="_blank"
+          (click)="closeMenu()"
+        >Resume</a>
+        <a href="#contact" class="btn btn-primary label-sm" (click)="closeMenu()">Contact</a>
+      </div>
+    </div>
+  </nav>
+</header>

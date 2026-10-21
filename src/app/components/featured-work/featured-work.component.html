@@ -1,0 +1,30 @@
+<section id="case-studies" class="container-page section-lg stack-md">
+  <div class="section-heading rule-bottom">
+    <h2 class="headline-lg text-primary">Featured Work</h2>
+    <a [routerLink]="['/work']" class="label-sm text-muted hide-mobile">View all work</a>
+  </div>
+
+  <div class="grid-12">
+    @for (project of projects; track project.title) {
+      <a
+        [routerLink]="['/work', project.slug]"
+        [class]="project.columnClass + ' case-study-card-link featured-work-card-link'"
+        [attr.aria-label]="'Read case study: ' + project.title"
+      >
+        <article class="card card-hover case-study featured-work-card stack-sm">
+          <img class="case-image" [src]="project.image" [alt]="project.imageAlt" />
+          <div class="case-content stack-sm">
+            <div class="tag-row">
+              @for (tag of project.tags; track tag) {
+                <span class="chip label-sm">{{ tag }}</span>
+              }
+            </div>
+            <h3 class="headline-md text-primary">{{ project.title }}</h3>
+            <p class="body-md text-muted">{{ project.summary }}</p>
+            <span class="btn btn-ghost label-sm">Read Case Study <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </article>
+      </a>
+    }
+  </div>
+</section>

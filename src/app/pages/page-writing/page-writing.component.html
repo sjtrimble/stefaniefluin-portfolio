@@ -1,0 +1,45 @@
+<section class="page-writing container-page section-md stack-md">
+  <header class="stack-xs">
+    <h1 class="headline-xl text-primary">Writing</h1>
+    <p class="body-lg text-muted">
+      Essays and notes on design systems, product strategy, and design engineering.
+    </p>
+  </header>
+
+  <div class="grid-12 gap-md">
+    @for (article of articleCards; track article.title) {
+      <article class="card card-hover case-study writing-card col-4 stack-sm">
+        <a
+          class="writing-card__media"
+          [href]="article.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="'Open article: ' + article.title"
+        >
+          <img
+            class="case-image writing-card__preview"
+            [src]="article.image"
+            [alt]="article.imageAlt || article.title"
+            loading="lazy"
+          />
+        </a>
+
+        <div class="case-content writing-card__body stack-sm">
+          <div class="tag-row">
+            <span class="chip label-sm">{{ article.domain }}</span>
+          </div>
+          <h2 class="headline-md writing-card__title">{{ article.title }}</h2>
+          <p class="body-md text-muted">{{ article.description }}</p>
+          <a
+            class="btn btn-ghost label-sm writing-card__cta"
+            [href]="article.link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read article <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </article>
+    }
+  </div>
+</section>

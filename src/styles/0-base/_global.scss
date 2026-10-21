@@ -1,54 +1,21 @@
+html,
 body {
-  @include body-font();
-  background: $white;
-  color: $darkgray;
-  margin: 0;
-  padding: 0;
+  // @include body-font();
   cursor: url('../../assets/icons/cursor-pointer.svg'), default;
+	margin: 0;
+	padding: 0;
+	background: var(--background);
+	color: var(--on-background);
+	font-family: var(--font-sans);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1080px;
-  margin: auto;
-  padding: 2rem 1rem;
-
-  main.content & {
-    width: 80%;
-  }
-}
-
-main.content {
-  min-height: calc(100vh - 242px);
-  margin-top: 97px;
-}
-
-section,
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
-  &.section-highlight {
-    background-color: $lightgray;
-    margin: auto;
-    text-align: center;
-    padding: 2rem 0;
-  }
+* {
+	box-sizing: border-box;
 }
 
 ul.no-list-style {
   list-style: none;
   padding: 0 16px;
-}
-
-.layout-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
 }
 
 hr {
@@ -59,12 +26,6 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-// a:focus {
-//   outline: none;
-//   border: $lilac 2px solid;
-//   box-shadow: 0px 0px 2px rgba($lilac, 0.5);
-// }
 
 //  Animations TODO: Move to Helpers
 // .fade {

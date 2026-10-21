@@ -1,0 +1,20 @@
+<footer class="site-footer rule-top">
+  <div class="container-page footer-row">
+    <div class="footer-brand">Stefanie Fluin</div>
+    <div class="footer-links">
+      @for (link of links; track link.label) {
+        <a [href]="link.href" class="label-sm text-muted">{{ link.label }}</a>
+      }
+    </div>
+    <p class="body-md text-muted footer-note">
+      <span>
+        &copy; 2026 Stefanie Fluin
+      </span>
+      @if (hireMode()) {
+        <span>
+           | Available for strategic leadership roles
+        </span>
+      }
+    </p>
+  </div>
+</footer>

@@ -1,7 +1,6 @@
 /* ========================
-MODULES STYLES
+HELPERS STYLES
 =========================*/
 
-@import 'animations';
-@import 'constants';
-@import 'mixins';
+@use 'animations';
+@use 'utility';

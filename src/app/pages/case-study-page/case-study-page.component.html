@@ -1,0 +1,28 @@
+@if (caseStudy(); as study) {
+  <div class="case-study-page">
+    <app-case-study-hero-section [caseStudy]="study" />
+
+    @for (section of study.sections; track $index) {
+      @switch (section.type) {
+        @case ('rich-text') {
+          <app-case-study-rich-text-section [section]="section" />
+        }
+        @case ('metrics') {
+          <app-case-study-metrics-section [section]="section" />
+        }
+        @case ('image') {
+          <app-case-study-image-section [section]="section" />
+        }
+      }
+    }
+
+    <section class="container-page section-lg">
+      <a class="btn btn-secondary label-sm" routerLink="/">Back to Homepage</a>
+    </section>
+  </div>
+} @else {
+  <section class="container-page section-xl stack-sm">
+    <p class="label-sm text-muted">Case study not found.</p>
+    <a class="btn btn-secondary label-sm" routerLink="/">Return Home</a>
+  </section>
+}

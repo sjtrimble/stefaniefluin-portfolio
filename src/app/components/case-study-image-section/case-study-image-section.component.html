@@ -1,0 +1,9 @@
+<section class="container-page section-lg case-study-section stack-sm">
+  @if (section().heading) {
+    <h2 class="headline-lg text-primary">{{ section().heading }}</h2>
+  }
+  <img class="card case-study-image" [src]="section().image" [alt]="section().imageAlt" />
+  @if (section().caption) {
+    <p class="body-md text-muted case-study-caption">{{ section().caption }}</p>
+  }
+</section>
