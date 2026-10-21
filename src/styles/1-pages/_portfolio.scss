@@ -28,22 +28,28 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-md);
+
+  .nav-link {
+    color: var(--on-surface-variant);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 4px;
+    transition: color var(--motion-fast) var(--motion-standard-ease),
+      border-color var(--motion-fast) var(--motion-standard-ease);
+  
+    &:hover,
+    &:focus-visible,
+    &-active {
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
 }
 
-.nav-link {
-  color: var(--on-surface-variant);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 4px;
-  transition: color var(--motion-fast) var(--motion-standard-ease),
-    border-color var(--motion-fast) var(--motion-standard-ease);
-
-  &:hover,
-  &:focus-visible,
-  &-active {
-    color: var(--primary);
-    border-color: var(--primary);
-  }
+.nav-actions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-sm);
 }
 
 .menu-btn {
