@@ -170,6 +170,46 @@ export const CASE_STUDIES: CaseStudy[] = [
       },
       {
         type: 'rich-text',
+        heading: 'Extending the Vision',
+        body: [
+          'Immersive on-site workshops brought together management, stakeholders, and subject matter experts to understand the existing onboarding experience, goals, desires, and payer complexity.',
+        ]
+      },
+      {
+        type: 'image',
+        heading: 'Hello World Before',
+        image: '../assets/images/work/case-study-angular/angular-helloworld-before.png',
+        imageAlt: 'Angular Hello World page before redesign',
+        caption: 'The original Hello World page all developers encountered when starting a new Angular project.'
+      },
+      {
+        type: 'image',
+        heading: 'Hello World After',
+        image: '../assets/images/work/case-study-angular/angular-helloworld-after.png',
+        imageAlt: 'Angular Hello World page after redesign',
+        caption: 'The redesigned Hello World page providing a clearer and more modern experience for developers.'
+      },
+      {
+        type: 'rich-text',
+        heading: 'And More',
+        body: [
+          'Continued collaboration with the Angular team to extend their brand and experience across a custom brand-aligned icon set, and a reusable deck for presentations.',
+        ]
+      },
+      {
+        type: 'image',
+        image: '../assets/images/work/case-study-angular/angular-keynote-deck.jpg',
+        imageAlt: 'Keynote presentation at NG Conference',
+        caption: 'Angular keynote presentation at NG Conference utilizing the brand-aligned deck.'
+      },
+      {
+        type: 'image',
+        image: '../assets/images/work/case-study-angular/angular-icons.png',
+        imageAlt: 'Angular icon set',
+        caption: 'Branded Angular ecosystem icon set.'
+      },
+      {
+        type: 'rich-text',
         kicker: 'Impact',
         heading: 'A rewarding collaboration',
         body: [
@@ -181,7 +221,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     slug: 'cobalt',
     featured: true,
-    title: 'Solventum Product Design System - Coming Soon',
+    title: 'Solventum Cobalt Product Design System - Coming Soon',
     summary: 'Rebranding the official Solventum product design system from the ground up.',
     subtitle: '',
     client: '',
@@ -196,6 +236,28 @@ export const CASE_STUDIES: CaseStudy[] = [
         heading: 'Coming Soon',
         body: [
           'A story about rebranding, and more.'
+        ]
+      }
+    ]
+  },
+  {
+    slug: 'hartford-huk',
+    featured: true,
+    title: 'The Hartford HUK Design System - Coming Soon',
+    summary: 'Refining the Hartford design system.',
+    subtitle: '',
+    client: '',
+    role: 'Product Owner and UX Design Lead',
+    tags: ['Design System', 'Rebranding', 'Project Management'],
+    heroImage: '../assets/images/work/case-study-huk/huk-docs-central.png',
+    heroImageAlt: '',
+    sections: [
+      {
+        type: 'rich-text',
+        kicker: 'Something exciting is coming',
+        heading: 'Coming Soon',
+        body: [
+          'A story about a refresh and formalizing process.'
         ]
       }
     ]
